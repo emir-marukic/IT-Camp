@@ -1,0 +1,40 @@
+/* CSS BOX model je box koji okruzuje svaki HTML ELEMENT */
+body {
+  margin: 0;
+  background-color: cadetblue;
+}
+.main {
+  background-color: rgba(222, 133, 18, 0.2);
+  /* Opacity svojstvo daje prozirnost nasem elementu*/
+  /* opacity: 0.5; */
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  /* Definisanje margine za sve strane */
+  /* margin: 100px; */
+  /* Definisanje margine za svaku stranu posebno */
+  /* margin-top: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  margin-left: 100px; */
+  /* Definisanje preko margin gde dodeljujemo vise vrednosti */
+  /* Ove vrednosti se definisu prema kazaljki na satu  */
+  /* margin: 50px 100px 60px 40px; */
+  /* 1 vrednost top-bottom, 2 vrednost left-right */
+  /* margin: 60px 90px; */
+  /* Centriranje kontenta */
+  /* margin: auto; */
+  /* margin: 50px auto; */
+  /* Pravila za pading su ista kao za marginu */
+  margin: 60px auto 0px;
+  padding: 15px 30px;
+}
+.main p:hover {
+  font-size: 24px;
+  background-color: aqua;
+}
+p:nth-of-type(2):hover {
+  font-size: 24px;
+  background-color: aqua;
+}

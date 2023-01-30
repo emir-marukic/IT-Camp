@@ -1,0 +1,15 @@
+h1 {
+  color: rgb(79, 172, 200);
+  text-align: center;
+}
+.main {
+  width: 400px;
+  height: 400px;
+  background-color: #ff9b54;
+  color: brown;
+  /* overflow svojstvo sluzi za dodavnaje scrollbar-a kada sadrzaj unutar kontejnera zahteva vise prostora. */
+  /* overflow: visible;
+  overflow: scroll; */
+  /* overflow: hidden; */
+  overflow: auto;
+}

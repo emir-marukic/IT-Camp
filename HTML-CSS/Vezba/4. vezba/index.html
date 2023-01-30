@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forme</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="forma1">
+        <img src="/3. cas/nit.png" alt="" />
+        <p>
+          Ako zelite da pristupite Centar Nit site-u molimo vas da popunite
+          sledeca polja
+        </p>
+        <form action="https://centarnit.com/" target="_blank">
+          <label for="username"></label>
+          <input type="text" placeholder="username" required />
+          <br />
+          <br />
+          <label for="password"></label>
+          <input type="password" required placeholder="password" />
+          <br />
+          <br />
+          <button id="btn1">Prijavi se</button>
+        </form>
+      </div>
+    </div>
+    <div id="container2">
+      <div id="forma2">
+        <form
+          action="https://www.udemy.com/?deal_code=&utm_term=Homepage&utm_content=Textlink&utm_campaign=Rakuten-default&ranMID=39197&ranEAID=UGrHaPSUfM0&ranSiteID=UGrHaPSUfM0-ugeF9v7FG5Q.sck3GuYIXQ&utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=UGrHaPSUfM0"
+          target="_blank"
+        >
+          <label for="username">Unesite vase podatke</label>
+          <br />
+          <br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+            required
+          />
+          <label for="password"></label>
+          <br />
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+            required
+          />
+          <br />
+          <label for="date"></label>
+          <br />
+          <input type="date" name="date" id="date" required />
+          <br />
+          <br />
+          <label for="musko">Musko</label>
+          <input type="radio" name="pol" id="musko" value="musko" required />
+          <label for="zensko">Zensko</label>
+          <input type="radio" name="pol" id="zensko" value="zensko" required />
+          <br />
+          <br />
+          <button type="reset" id="btn2">Reset</button>
+          <button type="submit" id="btn3">Potvrdi</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
