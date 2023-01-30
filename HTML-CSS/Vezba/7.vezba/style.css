@@ -92,6 +92,7 @@ body {
   color: #37517e;
   font-family: open sans;
   margin-bottom: 100px;
+  cursor: pointer;
 }
 .container:hover {
   transform: translateY(-20px);
