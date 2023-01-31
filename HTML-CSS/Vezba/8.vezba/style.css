@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: rgb(242, 239, 239);
+}
+table,
+td,
+tr {
+  border-collapse: collapse;
+  /* border: 1px solid black; */
+}
+table {
+  width: 100%;
+  /* height: 70px; */
+}
+.first {
+  background-color: #3d4d6a;
+}
+.logo {
+  width: 90px;
+  font-size: 30px;
+  font-family: jost;
+  font-weight: 500;
+  color: white;
+  text-align: end;
+  border: none;
+  height: 70px;
+}
+h2 {
+  width: 100px;
+  font-size: 45px;
+  font-family: jost;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+
+  height: 70px;
+}
+.link-7 {
+  padding: 10px 20px;
+  /* border: 1px solid #47b2e4; */
+  font-weight: 600;
+  color: white;
+  margin-left: 40px;
+  font-family: open sans;
+  /* border-radius: 300px; */
+  background-color: #3d4d6a;
+  /* height: 41px; */
+  width: 121px;
+  /* margin-top: 15px; */
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.link {
+  width: 150px;
+  font-family: open sans;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+.link:hover {
+  cursor: pointer;
+  color: #47b2e4;
+  transition: ease 0.5s;
+}
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+  font-family: jost;
+  margin-right: 100px;
+}
+.paragraph {
+  font-family: open sans;
+  margin-left: 250px;
+  width: 1500px;
+  font-weight: 200;
+  font-size: 19px;
+  color: #444444;
+  text-align: center;
+}
+p {
+  width: 1000px;
+  margin-left: 280px;
+}
+h3 {
+  margin-left: 180px;
+}
+.main-container {
+  width: 15%;
+  height: 300px;
+  padding: 60px 40px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+  margin-top: 100px;
+  margin-left: 150px;
+  font-family: open sans;
+  font-weight: 400;
+}
+.main-container a {
+  color: #37517e;
+  text-decoration: none;
+  font-family: open sans;
+  font-weight: 600;
+  font-size: 20px;
+}
+.main-container:hover {
+  transform: translateY(-10px);
+  color: #47b2e4;
+  transition: ease-in-out 0.3s;
+  font-family: open sans;
+}
