@@ -100,9 +100,14 @@ body {
   transition: ease-in-out 0.3s;
 }
 .container h3 {
-  margin-top: 45px;
+  margin-top: 20px;
   margin-bottom: 15px;
 }
 .mainContainer {
   display: flex;
+}
+#icons {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #47b2e4;
 }
