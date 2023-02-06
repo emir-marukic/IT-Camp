@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+img {
+  width: 50%;
+  height: 500px;
+  float: left;
+  margin-right: 15px;
+}
+.box-1 {
+  width: 500px;
+  height: 400px;
+  background-color: rgba(165, 42, 42, 0.5);
+  float: left;
+  margin-right: 20px;
+}
+.box-2 {
+  width: 700px;
+  height: 350px;
+  background-color: blue;
+  float: right;
+}
+p {
+  background-color: yellow;
+}
+.par {
+  clear: both;
+}
