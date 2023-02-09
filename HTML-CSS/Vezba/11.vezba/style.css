@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-attachment: fixed; */
+  background-color: #3a2778;
+  font-family: open sans;
+}
+::selection {
+  background-color: #79589f;
+}
+body::before {
+  content: "";
+  background: no-repeat center center;
+  background-image: url(https://signup.heroku.com/assets/header-illustration-3a4c23d829b8e7030dc9083774e0758b3728928904767e24784d840b40b98c78.png);
+  background-size: 953px 210px;
+  background-position: center top;
+  width: 100%;
+  height: 210px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+nav {
+  width: 800px;
+  margin: auto;
+  /* background-color: red; */
+  height: 181px;
+  /* background-image: url(./headerSlika.jpg);
+  background-position: center top;
+  background-size: 953px 210px;
+  width: 100%; */
+  /* background-color: aqua; */
+}
+.header-logo {
+  width: 150px;
+  height: 42px;
+  display: block;
+  position: absolute;
+  left: 380px;
+  top: 20px;
+  background: no-repeat 0 0;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  background-image: url(https://signup.heroku.com/assets/logo-horizontal-30c94876b673967b26d0e4a698748b3a157e699845045b3b64fe69706c794bb9.png);
+  background-size: 150px 42px;
+}
+
+.header-login {
+  display: flex;
+  margin-left: 63%;
+  justify-content: space-around;
+  /* background-color: aqua; */
+  width: 300px;
+  height: 40px;
+  align-items: center;
+  position: relative;
+  top: 20px;
+}
+.header-login button {
+  position: relative;
+  bottom: 10px;
+}
+.header-login p {
+  margin-right: 30px;
+  color: white;
+  font-size: 14px;
+
+  font-weight: 100;
+}
+.header-login button {
+  padding: 11px 16px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  max-width: none;
+  border-radius: 4px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  color: white;
+}
+.header-main {
+  text-align: center;
+  margin-top: 110px;
+  font-size: 23px;
+  color: white;
+}
+.main {
+  background-color: white;
+  width: 790px;
+  height: 904px;
+  display: flex;
+  margin: 50px auto 0px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9fb;
+  background-image: url(https://signup.heroku.com/assets/page-illustration-11400c2a5109317ad7e99571ba2a42bc55522ffa8ea6f9dcdff99737ab6149ac.png);
+  background-size: 950px 160px;
+  background-repeat: no-repeat;
+}
+.main .main-content {
+  width: calc(100% - 332px);
+  padding: 40px 40px 20px 40px;
+}
+.main-content h2 {
+  margin: 0 auto 12px;
+  font-size: 24px;
+  margin: 0 auto 15px;
+  font-weight: 100;
+  color: #79589f;
+}
+.main-content p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+span {
+  margin-left: 20px;
+}
+hr {
+  height: 1px;
+  margin: 50px auto 40px;
+  border: 0;
+  background-color: rgba(228, 228, 231, 0);
+
+  background-image: linear-gradient(
+    to right,
+    rgba(228, 228, 231, 0),
+    rgba(228, 228, 231, 0.9) 10%,
+    rgba(228, 228, 231, 0.9) 90%,
+    rgba(228, 228, 231, 0)
+  );
+}
+i {
+  font-size: 26px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  height: 869px;
+  width: 362px;
+  position: relative;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  margin-right: -30px;
+  margin-top: -5px;
+  z-index: 10;
+  box-shadow: 0 0 0 1px rgb(89 105 128 / 10%),
+    0 3px 20px 0 rgb(89 105 128 / 30%), 0 1px 2px 0 rgb(0 0 0 / 5%);
+  bottom: 885px;
+  left: 805px;
+}
+input {
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  color: #383e40;
+}
+label {
+  font-size: 13px;
+  font-weight: 100;
+}
+select {
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  color: #383e40;
+}
+button {
+  padding: 18px 0;
+  background: #0650aa;
+  color: #fff;
+  border-style: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.information p {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 100;
+}
