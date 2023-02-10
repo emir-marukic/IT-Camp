@@ -55,11 +55,17 @@
       </div>
     </div>
     <div class="information">
-      <label for="firstN">First Name</label>
+      <label for="firstN"
+        >First Name <span class="star"><sup>*</sup></span></label
+      >
       <input type="text" placeholder="First name" required />
-      <label for="lastN">Last name</label>
+      <label for="lastN"
+        >Last name <span class="star"><sup>*</sup></span></label
+      >
       <input type="text" name="lastN" id="lastN" placeholder="Last name" />
-      <label for="email">Email address</label>
+      <label for="email"
+        >Email address <span class="star"><sup>*</sup></span></label
+      >
       <input type="email" name="email" id="email" placeholder="Email address" />
       <label for="company">Company name</label>
       <input
@@ -68,7 +74,9 @@
         id="company"
         placeholder="Comopany name"
       />
-      <label for="role">Role</label>
+      <label for="role"
+        >Role <span class="star"><sup>*</sup></span></label
+      >
       <select
         name="role"
         id="role"
@@ -88,7 +96,9 @@
         </option>
         <option value="other">Other</option>
       </select>
-      <label for="country">Contry/Region</label>
+      <label for="country"
+        >Contry/Region <span class="star"><sup>*</sup></span></label
+      >
       <select
         name="self_declared_country"
         id="self_declared_country"
@@ -823,7 +833,9 @@
         class="required"
         aria-required="true"
       >
-        <option value="">Select a language</option>
+        <option value="">
+          Select a language<span class="star"><sup>*</sup></span>
+        </option>
         <option value="ruby">Ruby</option>
         <option value="php">PHP</option>
         <option value="python">Python</option>
