@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.parent {
+  margin: auto;
+  width: 60%;
+  background-color: #5f9ea0;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  /* Horizontalno poravnanje:- */
+  /* align-items: center; */
+  align-items: flex-end;
+  /* Vertikalno poravnanje:- */
+  justify-content: space-between;
+}
+.box {
+  width: 150px;
+  height: 150px;
+}
+.first {
+  background-color: blueviolet;
+}
+.second {
+  background-color: aqua;
+}
+.third {
+  background-color: green;
+}

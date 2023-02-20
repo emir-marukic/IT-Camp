@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.parent {
+  margin: auto;
+  width: 60%;
+  background-color: aqua;
+  height: 80vh;
+  display: flex;
+  /* flex-direction: row;  defaultna vrednost*/
+  /* flex-direction: column; */
+
+  /* Horizontalno poravnanje */
+  /* justify-content: flex-start; defaultna vrednost horizontalog poravnanja*/
+  /* justify-content: center;
+  justify-content: flex-end;
+  justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  /* justify-content: stretch; */
+
+  /* align-items: flex-start; defaultna vrednost vertikalnog poravnanja*/
+  align-items: center;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+}
+.box:nth-of-type(1) {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(158, 91, 220);
+  align-self: flex-start;
+}
+.box:nth-of-type(2) {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(158, 91, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box:nth-of-type(3) {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(183, 138, 225);
+  align-self: flex-end;
+}

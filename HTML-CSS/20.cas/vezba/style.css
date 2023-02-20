@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: roboto;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+}
+.para {
+  background-color: red;
+  width: 30vw;
+}
+button {
+  background-color: white;
+  border: 1xp solid rgb(24, 24, 53);
+  padding: 10px 40px;
+  border-radius: 30px;
+}
+p {
+  margin: 30px 0px;
+  font-size: 18px;
+}

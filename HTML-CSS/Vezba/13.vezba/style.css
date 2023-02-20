@@ -375,15 +375,15 @@ footer {
 .img1 {
   position: absolute;
   left: -130px;
-  bottom: 0px;
+  bottom: -5px;
   z-index: 5;
 }
 .img2 {
   position: absolute;
-  top: -10px;
+  top: -8px;
 }
 .img3 {
   position: absolute;
   right: -90px;
-  bottom: 0px;
+  bottom: -5px;
 }
