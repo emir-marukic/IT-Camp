@@ -12,6 +12,10 @@ header {
   display: flex;
   justify-content: space-between;
 }
+header a {
+  color: white;
+  text-decoration: none;
+}
 .logo-input {
   /* background-color: aliceblue; */
   width: 30%;
@@ -37,7 +41,7 @@ header {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  width: 30vw;
+  width: 40vw;
   color: rgba(255, 255, 255, 0.7);
 }
 .links button {
@@ -49,15 +53,18 @@ header {
   color: white;
   font-size: 15px;
 }
+.links button:hover {
+  cursor: pointer;
+}
 .icon {
   color: rgba(255, 255, 255, 0.4);
   position: absolute;
-  left: 15.2vw;
+  left: 13.4vw;
 }
 main {
   display: flex;
   background-color: #1d1d20;
-  width: 70%;
+  width: 65%;
   height: 80px;
   margin: auto;
   justify-content: space-between;
@@ -75,6 +82,7 @@ main {
 }
 main img {
   height: 50px;
+  margin-right: 10px;
 }
 main a {
   color: #0d93f2;
@@ -95,9 +103,10 @@ main a {
 }
 .second {
   display: flex;
-  width: 30%;
+  width: 40%;
   justify-content: space-around;
   align-items: center;
+  gap: 5px;
 }
 .population {
   display: flex;
@@ -106,6 +115,7 @@ main a {
   align-items: center;
   height: 50px;
 }
+
 .population:nth-of-type(2) {
   border-right: 1px solid grey;
   border-left: 1px solid gray;
@@ -113,10 +123,6 @@ main a {
 }
 .population p:nth-of-type(1) {
   margin-bottom: 5px;
-  /* font-size: 20px; */
-}
-.population p:nth-of-type(2) {
-  font-size: 25px;
 }
 .links-container {
   height: 6vh;
@@ -168,6 +174,7 @@ main a {
   background-color: #303136;
   padding: 10px 30%;
   border-radius: 5px;
+  color: white;
 }
 .main-window {
   display: flex;
@@ -181,12 +188,14 @@ main a {
   display: flex;
   flex-direction: column;
   width: 33.33%;
+  border-right: 1px solid rgba(128, 128, 128, 0.4);
 }
 .first-window p {
   display: flex;
   align-items: center;
   background-color: #27272b;
   height: 40px;
+  padding-left: 20px;
 }
 .first-window p:nth-of-type(2) {
   background-color: #28282b;
@@ -199,6 +208,10 @@ sup {
   flex-direction: column;
   align-items: flex-start;
   width: 33.33%;
+  border-right: 1px solid rgba(128, 128, 128, 0.4);
+}
+.second-window p {
+  margin-left: 20px;
 }
 .second-inp {
   display: flex;
@@ -215,14 +228,22 @@ sup {
   border-style: none;
   padding: 10px 20px;
   border-radius: 5px;
+  margin-right: 20px;
+}
+.second-inp button:hover {
+  cursor: pointer;
 }
 .second-paragraph {
   padding: 20px 0px;
   width: 100%;
-  line-height: 50px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.4);
 }
 .second-paragraph p {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.second-paragraph p:nth-of-type(1) {
+  margin: 20px 0px;
   margin-left: 20px;
 }
 .header-para {
@@ -249,6 +270,7 @@ sup {
   padding: 10px 30px;
   background-color: #3b4048;
   border-radius: 5px;
+  color: white;
 }
 .img {
   display: flex;
