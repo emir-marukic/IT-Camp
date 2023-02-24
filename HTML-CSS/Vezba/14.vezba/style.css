@@ -139,6 +139,9 @@ i {
   border-radius: 40px;
   border: 1px solid black;
 }
+.card-button button:hover {
+  cursor: pointer;
+}
 .icon {
   font-size: 15px;
   color: red;
@@ -179,12 +182,12 @@ footer:hover h1 {
   transition: ease-in-out 1s;
 }
 footer:hover .ball:nth-of-type(1) {
-  transform: translateX(940px);
-  background-color: rgba(255, 255, 0, 0.9);
+  transform: translateX(750px);
+  background-color: rgba(247, 158, 30, 0.9);
   opacity: 1;
 }
 footer:hover .ball:nth-of-type(2) {
-  transform: translateX(-940px);
-  background-color: rgba(255, 0, 0, 0.9);
+  transform: translateX(-750px);
+  background-color: rgba(235, 29, 36, 0.9);
   opacity: 1;
 }
