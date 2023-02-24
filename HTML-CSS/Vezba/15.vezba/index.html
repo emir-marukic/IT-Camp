@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e232947c3e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-input">
+        <img
+          src="https://rapidapi.com/static-assets/default/dark-logo-78e48dc1-ca3f-4d67-a6f5-74032f439c8b.svg"
+          alt=""
+        />
+        <i class="fa-solid fa-magnifying-glass icon"></i>
+        <input type="text" name="api" id="api" placeholder="Search for API's" />
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href=""></a>Create Team</li>
+          <li><a href=""></a>Add Your API</li>
+          <li><a href=""></a>Docs</li>
+          <li><a href=""></a>Log in</li>
+          <button>Sign up</button>
+        </ul>
+      </div>
+    </header>
+    <div class="main-container">
+      <main>
+        <div class="first">
+          <img
+            src="https://rapidapi.com/cdn/images?url=https://rapidapi-prod-apis.s3.amazonaws.com/e7ff86e0-3df6-4a8f-a2e0-b6187038ebc4.jpg"
+            alt=""
+          />
+          <div class="first-text">
+            <h2>Worldometer Covid 19</h2>
+            <div class="second-text">
+              <p>By</p>
+              <a href="">Shouvik</a>
+              <p>| Updated a year ago |</p>
+              <a href="">Health and Fitness</a>
+            </div>
+          </div>
+        </div>
+        <div class="second">
+          <div class="population">
+            <p>Popularity</p>
+            <p>0.1/10</p>
+          </div>
+          <div class="population">
+            <p>Latency</p>
+            <p>35ms</p>
+          </div>
+          <div class="population">
+            <p>Service Level</p>
+            <p>0%</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="main-container">
+      <div class="links-container">
+        <div class="main-links">
+          <ul>
+            <li><a href="">Endpoints</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Tutorials</a></li>
+            <li><a href="">Discussion</a></li>
+            <li><a href="">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <h1>Worldometer Covid 19 API Documentation</h1>
+      <div class="text-link">
+        <p>This Freemium API that provides Covid 19 statistics from</p>
+        <a href="https://www.worldometers.info/coronavirus/"
+          >https://www.worldometers.info/coronavirus/</a
+        >
+      </div>
+      <div class="text-link">
+        <p>This API periodically updates live data from</p>
+        <a href="https://www.worldometers.info/coronavirus/#countries"
+          >https://www.worldometers.info/coronavirus/#countries</a
+        >
+      </div>
+    </div>
+    <div class="main-window">
+      <div class="first-window">
+        <div class="first-inp">
+          <input
+            type="text"
+            name="endpoints"
+            id="endpoints"
+            placeholder="Search endpoints"
+          />
+        </div>
+        <div class="covid-stat">
+          <p><sup>GET</sup> GetCountries</p>
+          <p><sup>GET</sup> GetCovidStats</p>
+        </div>
+      </div>
+      <div class="second-window">
+        <div class="second-inp">
+          <p><sup>GET</sup> GetCountries</p>
+          <button>Test Endpoint</button>
+        </div>
+        <div class="second-paragraph">
+          <p>
+            List all COVID-19 countries and their country codes. The country
+            code will be required to get Statistics for the specific country.
+          </p>
+          <p>Parameters : - sorted : Show countries sorted alphabetically.</p>
+        </div>
+        <div class="header-para">
+          <p>Header Parameters</p>
+        </div>
+        <div class="header-main">
+          <p>X-RapidAPI-Key</p>
+          <input
+            type="text"
+            name="key"
+            id="key"
+            placeholder="Sign up for key"
+          />
+        </div>
+      </div>
+      <div class="img">
+        <img src="./code.PNG" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
