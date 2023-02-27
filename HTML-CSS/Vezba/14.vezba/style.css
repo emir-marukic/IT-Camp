@@ -182,12 +182,65 @@ footer:hover h1 {
   transition: ease-in-out 1s;
 }
 footer:hover .ball:nth-of-type(1) {
-  transform: translateX(750px);
+  transform: translateX(100vh);
   background-color: rgba(247, 158, 30, 0.9);
   opacity: 1;
 }
 footer:hover .ball:nth-of-type(2) {
-  transform: translateX(-750px);
+  transform: translateX(-100vh);
   background-color: rgba(235, 29, 36, 0.9);
   opacity: 1;
+}
+
+@media (max-width: 940px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .links ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    margin: 0;
+  }
+  nav button {
+    margin: 0;
+  }
+  .second-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 200vh;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  footer:hover .ball:nth-of-type(1) {
+    transform: translateX(58vh);
+    background-color: rgba(247, 158, 30, 0.9);
+    opacity: 1;
+  }
+  footer:hover .ball:nth-of-type(2) {
+    transform: translateX(-58vh);
+    background-color: rgba(235, 29, 36, 0.9);
+    opacity: 1;
+  }
+}
+@media (max-width: 666px) {
+  nav button {
+    padding: 10px 10px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
+@media (max-width: 611px) {
+  nav ul {
+    width: 200px;
+  }
 }
