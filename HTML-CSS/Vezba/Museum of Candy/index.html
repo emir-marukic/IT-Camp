@@ -25,7 +25,7 @@
     <title>Document</title>
   </head>
   <body>
-    <nav
+    <!-- <nav
       id="mainNavbar"
       class="navbar navbar-dark navbar-expand-md py-0 ml-5 fixed-top"
     >
@@ -49,6 +49,57 @@
             <a href="" class="nav-link">TICKETS</a>
           </li>
         </ul>
+      </div>
+    </nav> -->
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-dark navbar-expand-md py-0 ml-0 fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CANDY</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5
+              class="offcanvas-title text-secondary-emphasis"
+              id="offcanvasNavbarLabel "
+            >
+              Menu
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OTHER</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
     <section class="container-fluid px-0">

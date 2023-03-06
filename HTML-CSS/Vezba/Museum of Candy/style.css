@@ -7,6 +7,9 @@ body {
   font-weight: 100;
   font-size: 2.5rem;
 }
+.nav-link a {
+  color: #ea1c2c;
+}
 .first p {
   color: #f498b8;
   font-weight: 100;
