@@ -1,1 +1,0 @@
-// Java Script Switch naredba
