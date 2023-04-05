@@ -58,6 +58,42 @@
     4. Suma neparnih prirodnih brojeva od 10 do 20 
 */
 
-for (let i = 6; i < 15; i++) {
-  console.log(i * 2);
-}
+//-------DOMACI----------//
+
+// Ispisati neparne brojeve od 1 do 20 na dva nacina
+
+// 2. 1.Nacin
+
+// for (let i = 1; i < 21; i += 2) {
+//   console.log(i);
+// }
+//---------------------------------------------------
+// 2. 2.Nacin
+
+// for (let i = 1; i < 21; i++) {
+//   if (i % 2 === 1) {
+//     console.log(i);
+//   }
+// }
+//---------------------------------------------------
+// 2. Ispisati dvosturku vrednosti prirodnih brojeva
+
+// for (let i = 6; i < 15; i++) {
+//   console.log(i * 2);
+// }
+//---------------------------------------------------
+// 3. Ispisati sve brojeve od 50 do 100 koji su deljivi sa 5
+
+// for (let i = 50; i < 101; i++) {
+//   if (i % 5 === 0) {
+//     console.log(i);
+//   }
+// }
+//---------------------------------------------------
+// 4. Suma neparnih prirodnih brojeva od 10 do 20
+
+// let suma = 0;
+// for (let i = 11; i < 20; i += 2) {
+//   suma += i;
+// }
+// console.log(suma);
