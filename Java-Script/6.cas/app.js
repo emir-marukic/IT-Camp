@@ -52,10 +52,10 @@
 //   }
 // }
 
-/* 1. Ispisati neparne brojeve od 1 do 20 na dva nacina 
+/*  1. Ispisati neparne brojeve od 1 do 20 na dva nacina 
     2. Ispisati sve brojeve od 50 do 100 koji su deljivi sa 5 
     3. Ispisati dvosturku vrednosti prirodnih brojeva
-    4.Suma neparnih prirodnih brojeva od 10 do 20 
+    4. Suma neparnih prirodnih brojeva od 10 do 20 
 */
 
 for (let i = 6; i < 15; i++) {
