@@ -23,13 +23,14 @@
 // a inace ispisuje poruku: Deljenje je nemoguce
 
 //-----------------------------------------------------
-const x = parseInt(+prompt("Unesite 2 broja"));
-const y = parseInt(+prompt("Unesite 2 broja"));
+// const x = parseInt(+prompt("Unesite 2 broja"));
+// const y = parseInt(+prompt("Unesite 2 broja"));
 
-switch (y !== 0) {
-  case true:
-    console.log("Kolicik je: " + x / y);
-    break;
-  default:
-    console.log("Deljenje nije moguce");
-}
+// switch (y !== 0) {
+//   case true:
+//     console.log("Kolicik je: " + x / y);
+//     break;
+//   default:
+//     console.log("Deljenje nije moguce");
+// }
+//---------------------------------------------------
