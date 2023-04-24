@@ -134,8 +134,8 @@
 // }
 // console.log(proizvod);
 
-let n = +prompt("Unesite broj");
-let proizvod = 1;
+// let n = +prompt("Unesite broj");
+// let proizvod = 1;
 
 // for (let i = 1; i <= n; i++) {
 //   if (i % 2 === 0) {
@@ -143,3 +143,43 @@ let proizvod = 1;
 //   }
 // }
 // console.log(proizvod);
+//
+// Ispisati prirodne brojeve od k do n.
+// Ispisati trostruku vrijednosti prirodnih brojeva od a do b.
+// Suma prirodnih brojeva od k do n.
+// Suma parnih prirodnih brojeva od 1 do 5.
+// Suma neparnih prirodnih brojeva od 1 do 5.
+
+// let i = +prompt("Unesite broj");
+// let n = +prompt("Unesite broj");
+
+// for (i; i <= n; i++) {
+//   console.log(i);
+// }
+
+// let i = +prompt("Unesite broj");
+// let n = +prompt("Unesite broj");
+
+// for (i; i <= n; i++) {
+//   console.log(i * 3);
+// }
+
+// let i = +prompt("Unesite broj");
+// let n = +prompt("Unesite broj");
+// let suma = 0;
+// for (i; i <= n; i++) {
+//   if (i % 2 === 1) {
+//     suma += i;
+//   }
+// }
+// console.log(suma);
+let i = +prompt("Unesite broj");
+let n = +prompt("Unesite broj");
+let proizvod = 1;
+
+for (i; i <= n; i++) {
+  if (i % 2 === 0) {
+    proizvod *= i;
+  }
+}
+console.log(proizvod);
