@@ -71,10 +71,14 @@
 // } else {
 //   console.log("Treba nam" + duzinaOgrade + "metara za ogradjivanje terena.");
 // }
-//-------------------------------
+// //-------------------------------
 // let i = +prompt("Unesite broj u intervalu 12 - 16");
-// if (i >= 12 && i <= 16) {
+// if (isNaN(i)) {
+//   console.log("Niste uneli korektan broj");
+// } else if (i >= 12 && i <= 16) {
 //   for (i; i >= 1; i--) {
 //     console.log(i * i - 25);
 //   }
+// } else {
+//   console.log("Morate uneti broj u intervalu od 12 - 16");
 // }
