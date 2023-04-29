@@ -82,3 +82,31 @@
 // } else {
 //   console.log("Morate uneti broj u intervalu od 12 - 16");
 // }
+// Domaci zadatak.
+// 1. Ispisati novu recenicu gde ce svaka rec zavrsavati velikim slovom.
+//-------------------------------
+// let recenica = "treba nam nova recenica gde svaka rec zavrsava velikim slovom";
+// let novaRecenica = "";
+// let length = recenica.length;
+// for (let i = 0; i < length; i++) {
+//   if (i === length - 1) {
+//     novaRecenica += recenica[i].toUpperCase();
+//   } else if (recenica[i + 1] === " ") {
+//     novaRecenica += recenica[i].toUpperCase();
+//   } else {
+//     novaRecenica += recenica[i];
+//   }
+// }
+// console.log(novaRecenica);
+//-------------------------------
+// 2.	Prebrojati koliko se puta u unetom stringu pojavljuje slovo "M" (i veliko i malo).
+// Npr. za string 'Mama ima momu', dobija se rezultat 5
+//-------------------------------
+// let recenica = "Mama ima momu";
+// let brojac = 0;
+// for (let i = 0; i < recenica.length; i++) {
+//   if (recenica[i] === "M" || recenica[i] === "m") {
+//     brojac++;
+//   }
+// }
+// console.log(brojac);
