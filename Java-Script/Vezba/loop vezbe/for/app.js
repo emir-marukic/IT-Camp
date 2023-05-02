@@ -199,16 +199,18 @@
 //--------------------------
 //Write a JavaScript program to check two given integers whether one is positive and another one is negative.
 
-let num = +prompt("Unesite broj");
-let num2 = +prompt("Unesite broj");
-if (isNaN(num) || isNaN(num2)) {
-  console.log("Morate uneti broj");
-} else if (num < 0) {
-  console.log(`${num} je negativan`);
-} else if (num2 < 0) {
-  console.log(`${num2} je negativan`);
-} else if (num > 0) {
-  console.log(`${num} je pozitivan`);
-} else if (num2 > 0) {
-  console.log(`${num2} je pozitivan`);
-}
+// let num = +prompt("Unesite broj");
+// let num2 = +prompt("Unesite broj");
+// if (isNaN(num) || isNaN(num2)) {
+//   console.log("Morate uneti broj");
+// } else if (num < 0) {
+//   console.log(`${num} je negativan`);
+// } else if (num2 < 0) {
+//   console.log(`${num2} je negativan`);
+// } else if (num > 0) {
+//   console.log(`${num} je pozitivan`);
+// } else if (num2 > 0) {
+//   console.log(`${num2} je pozitivan`);
+// }
+//------------------------
+//  Write a JavaScript program to produce a new string that has the first 3 characters in lower case from a given string.
