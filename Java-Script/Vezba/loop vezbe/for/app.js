@@ -196,3 +196,19 @@
 // for (let i = 0; i < 96; i = +5) {
 //   console.log(i);
 // }
+//--------------------------
+//Write a JavaScript program to check two given integers whether one is positive and another one is negative.
+
+let num = +prompt("Unesite broj");
+let num2 = +prompt("Unesite broj");
+if (isNaN(num) || isNaN(num2)) {
+  console.log("Morate uneti broj");
+} else if (num < 0) {
+  console.log(`${num} je negativan`);
+} else if (num2 < 0) {
+  console.log(`${num2} je negativan`);
+} else if (num > 0) {
+  console.log(`${num} je pozitivan`);
+} else if (num2 > 0) {
+  console.log(`${num2} je pozitivan`);
+}
