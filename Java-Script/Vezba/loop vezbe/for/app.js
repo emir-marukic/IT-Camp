@@ -173,13 +173,26 @@
 //   }
 // }
 // console.log(suma);
-let i = +prompt("Unesite broj");
-let n = +prompt("Unesite broj");
-let proizvod = 1;
+// let i = +prompt("Unesite broj");
+// let n = +prompt("Unesite broj");
+// let proizvod = 1;
 
-for (i; i <= n; i++) {
-  if (i % 2 === 0) {
-    proizvod *= i;
-  }
-}
-console.log(proizvod);
+// for (i; i <= n; i++) {
+//   if (i % 2 === 0) {
+//     proizvod *= i;
+//   }
+// }
+// console.log(proizvod);
+//
+//Let's practice using for...of. I've provided you with an array called numbers.
+//  Please use a for...of loop to loop over it, and print out the square of each value (the number multiplied by itself).
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for (row of numbers) {
+//   console.log(row * row);
+// }
+//---------------------------
+// 4.1.4 Напиши програм који исписује 0, 5, 10, 15, 20, …, 95, svaki broj u posebnom redu.
+
+// for (let i = 0; i < 96; i = +5) {
+//   console.log(i);
+// }
