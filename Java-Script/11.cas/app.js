@@ -50,14 +50,14 @@
 
 //Ispisati novu recenicu gde ce svaka rec pocinjati velikim slovom.
 
-const recenica = "treba nam nova recenica gde svaka rec pocinje velikim slovom";
-const recenica1 = "";
-for (let i = 0; i < recenica.length; i++) {
-  if (recenica1 === 0) {
-    recenica1 += recenica[i].toUpperCase();
-  } else if (recenica[i - 1] === " ") {
-    recenica1 += recenica[i].toUpperCase;
-  } else {
-    recenica1 += recenica[i];
-  }
-}
+// const recenica = "treba nam nova recenica gde svaka rec pocinje velikim slovom";
+// const recenica1 = "";
+// for (let i = 0; i < recenica.length; i++) {
+//   if (recenica1 === 0) {
+//     recenica1 += recenica[i].toUpperCase();
+//   } else if (recenica[i - 1] === " ") {
+//     recenica1 += recenica[i].toUpperCase;
+//   } else {
+//     recenica1 += recenica[i];
+//   }
+// }
