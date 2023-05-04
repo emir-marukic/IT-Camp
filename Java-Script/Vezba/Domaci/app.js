@@ -85,28 +85,69 @@
 // Domaci zadatak.
 // 1. Ispisati novu recenicu gde ce svaka rec zavrsavati velikim slovom.
 //-------------------------------
-const recenica = prompt("Unesite neku rec");
-let novaRecenica = "";
-let length = recenica.length;
-for (let i = 0; i < length; i++) {
-  if (i === length - 1) {
-    novaRecenica += recenica[i].toUpperCase();
-  } else if (recenica[i + 1] === " ") {
-    novaRecenica += recenica[i].toUpperCase();
-  } else {
-    novaRecenica += recenica[i];
-  }
-}
-console.log(novaRecenica);
+// const recenica = prompt("Unesite neku rec");
+// let novaRecenica = "";
+// let length = recenica.length;
+// for (let i = 0; i < length; i++) {
+//   if (i === length - 1) {
+//     novaRecenica += recenica[i].toUpperCase();
+//   } else if (recenica[i + 1] === " ") {
+//     novaRecenica += recenica[i].toUpperCase();
+//   } else {
+//     novaRecenica += recenica[i];
+//   }
+// }
+// console.log(novaRecenica);
 //-------------------------------
 // 2.	Prebrojati koliko se puta u unetom stringu pojavljuje slovo "M" (i veliko i malo).
 // Npr. za string 'Mama ima momu', dobija se rezultat 5
 // -------------------------------
-let recenica2 = "Mama ima momu";
-let brojac = 0;
-for (let i = 0; i < recenica2.length; i++) {
-  if (recenica2[i] === "M" || recenica2[i] === "m") {
-    brojac++;
-  }
-}
-console.log(brojac);
+// let recenica2 = "Mama ima momu";
+// let brojac = 0;
+// for (let i = 0; i < recenica2.length; i++) {
+//   if (recenica2[i] === "M" || recenica2[i] === "m") {
+//     brojac++;
+//   }
+// }
+// console.log(brojac);
+//-------------------------------
+// Domaci zadaci:
+//-------------------------------
+
+//  1. Napraviti novu recenicu koja ce imati isti tekst, ali bez razmaka.
+
+// let recenica = prompt("Unesite recenicu :");
+// let novaRecenica = "";
+// for (let i = 0; i < recenica.length; i++) {
+//   if (recenica[i] === " ") {
+//     continue;
+//   } else {
+//     novaRecenica += recenica[i];
+//   }
+// }
+// console.log(novaRecenica);
+//-------------------------------
+
+// 2. Napraviti novu recenicu gde ce umesto slova "a" pisati "t".
+// Dok ako se posle slova "a" nalazi slovo "n" pisace "d" umesto "a".
+
+// let recenica = prompt("Unesite recenicu :");
+// let novaRecenica = "";
+
+// for (let i = 0; i < recenica.length; i++) {
+//   if (
+//     (recenica[i] === "a" && recenica[i + 1] === "n") ||
+//     (recenica[i] === "A" && recenica[i + 1] === "N")
+//   ) {
+//     novaRecenica += "d";
+//   } else if (recenica[i] === "a" || recenica[i] === "A") {
+//     novaRecenica += "t";
+//   } else {
+//     novaRecenica += recenica[i];
+//   }
+// }
+// console.log(novaRecenica);
+//  3. Na osnovu date recenice napraviti i ispisati novu recenicu tako da:
+
+// (i)	se svi samoglasnici pretvore u velika slova;
+// (ii)	ostali karakteri se ne menjaju.
