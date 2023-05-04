@@ -148,6 +148,23 @@
 // }
 // console.log(novaRecenica);
 //  3. Na osnovu date recenice napraviti i ispisati novu recenicu tako da:
-
+//-------------------------------
 // (i)	se svi samoglasnici pretvore u velika slova;
 // (ii)	ostali karakteri se ne menjaju.
+
+const recenica = prompt("Unesite recenicu :");
+let novaRecenica = "";
+for (let i = 0; i < recenica.length; i++) {
+  if (
+    recenica[i] === "a" ||
+    recenica[i] === "e" ||
+    recenica[i] === "i" ||
+    recenica[i] === "o" ||
+    recenica[i] === "u"
+  ) {
+    novaRecenica += recenica[i].toUpperCase();
+  } else {
+    novaRecenica += recenica[i];
+  }
+}
+console.log(novaRecenica);
