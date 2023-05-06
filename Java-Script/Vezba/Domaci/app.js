@@ -172,13 +172,28 @@
 //-------------------------------
 // 1. Napraviti funkciju koja vraca zbir kvadrata dva broja. Ako se izostavi drugi argument, funkcija ga racuna kao 0.
 //-------------------------------
-function kvadrat(num1 = 0, num2 = 0) {
-  return num1 * num2;
-}
-
-console.log(kvadrat(f, 0));
+// function kvadrat(num1 = 0, num2 = 0) {
+//   return num1 * num2;
+// }
+// console.log(kvadrat(2, 3));
+//-------------------------------
 // 2. Napraviti funkciju koja vraca aritmeticku sredinu 3 broja. Sa defaultnim vrednostima.
-
+// function aritmetickaSredina(num1 = 1, num2 = 1, num3 = 1) {
+//   //   return (num1 + num2 + num3) % 3 === 0;
+//   return (num1 + num2 + num3) / 3;
+// }
+// console.log(aritmetickaSredina(4, 8, 12));
+//-------------------------------
 // 3. Napraviti funkciju povrsina koja uzima dve vrednosti.
+//-------------------------------
 // Ako su te dve vrednosti jednake da vraca povrsinu kvadrata uz odredjenu poruku,
 // dok ako su razlicite vrednosti da vraca povrsinu pravougaonika uz odredjenu poruku.
+//-------------------------------
+// function broj(num1 = 0, num2 = 0) {
+//   if (num1 === num2) {
+//     return "Povrsina kvadrata je " + num1 * num2;
+//   } else {
+//     return "Povrsina pravougaonika je " + num1 * num2;
+//   }
+// }
+// console.log(broj(2, 4));
