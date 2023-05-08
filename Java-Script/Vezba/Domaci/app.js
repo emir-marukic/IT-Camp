@@ -173,9 +173,9 @@
 // 1. Napraviti funkciju koja vraca zbir kvadrata dva broja. Ako se izostavi drugi argument, funkcija ga racuna kao 0.
 //-------------------------------
 // function kvadrat(num1 = 0, num2 = 0) {
-//   return num1 * num2;
+//   return num1 * num1 + num2 * num2;
 // }
-// console.log(kvadrat(2, 3));
+// console.log(kvadrat(4, 5));
 //-------------------------------
 // 2. Napraviti funkciju koja vraca aritmeticku sredinu 3 broja. Sa defaultnim vrednostima.
 // function aritmetickaSredina(num1 = 1, num2 = 1, num3 = 1) {
@@ -190,10 +190,14 @@
 // dok ako su razlicite vrednosti da vraca povrsinu pravougaonika uz odredjenu poruku.
 //-------------------------------
 // function broj(num1 = 0, num2 = 0) {
-//   if (num1 === num2) {
+//   if (isNaN(num1) || isNaN(num2)) {
+//     return "Morate uneti tacne vrednosti";
+//   } else if (num1 <= 0 || num2 <= 0) {
+//     return "Ne mozete uneti negativne vrednosti";
+//   } else if (num1 === num2) {
 //     return "Povrsina kvadrata je " + num1 * num2;
 //   } else {
 //     return "Povrsina pravougaonika je " + num1 * num2;
 //   }
 // }
-// console.log(broj(2, 4));
+// console.log(broj(2, 3));
