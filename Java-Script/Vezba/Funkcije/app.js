@@ -118,4 +118,4 @@ lastElement([]) //null */
 //     return null;
 //   }
 // };
-// console.log(lastElement([]));
+// console.log(lastElement([3, 5, 7]));
