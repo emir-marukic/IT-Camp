@@ -274,7 +274,7 @@
 //     return recenica.replace(rec, "#");
 //   }
 // };
-// console.log(myFunc("Danas je lep dan", "dan"));
+// console.log(myFunc("Danas je lep dan dan", "dan"));
 //------------------------------------------
 // Zadatak: Brojanje karaktera
 // Napiši funkciju koja prima jedan string kao argument i vraća broj karaktera u tom stringu. Ignoriši prazne prostore. Na primer, za ulazni string "Hello, World!", funkcija treba da vrati broj 12.
@@ -289,3 +289,41 @@
 //   return brojac;
 // };
 // console.log(myFunc("la la"));
+//--------------------------
+
+// first = () => {
+//   const recenica = prompt("Unesite neku recenicu: ");
+//   const recenica1 = recenica.toUpperCase();
+//   const recenica2 = recenica.toLocaleLowerCase();
+//   const duzinaRecenice = recenica.length;
+//   let recenica3 = "";
+//   for (let i = 0; i < duzinaRecenice; i++) {
+//     if (i < duzinaRecenice / 2) {
+//       recenica3 += recenica[i].toUpperCase();
+//     } else {
+//       recenica3 += recenica[i].toLocaleLowerCase();
+//     }
+//   }
+//   const recenica4 = recenica.replace(/skola/gi, "fakultet");
+//   return `${recenica1} \n
+//   ${recenica2} \n
+//   ${recenica3} \n
+//   ${recenica4} `;
+// };
+
+// console.log(first());
+
+// second = (recenica, rec) => {
+//   return recenica.replace(rec, "#");
+// };
+// console.log(second("danas je lep lep", "lep"));
+
+third = (recenica) => {
+  let brojac = 0;
+  for (let i = 0; i < recenica.length; i++) {
+    if (recenica[i] !== " ") {
+      brojac++;
+    }
+  }
+};
+console.log(third("la la"));
