@@ -290,7 +290,6 @@
 // };
 // console.log(myFunc("la la"));
 //--------------------------
-
 // first = () => {
 //   const recenica = prompt("Unesite neku recenicu: ");
 //   const recenica1 = recenica.toUpperCase();
@@ -327,6 +326,8 @@
 //   }
 // };
 // console.log(third("la la"));
+//--------------------------
+
 // Domaci:
 // Zadatak: Spajanje stringova
 // Napiši funkciju koja prima dva stringa kao argumenta i vraća njihovu konkatenaciju.
@@ -337,3 +338,23 @@
 // tj. da li se čita isto i s leva na desno i s desna na levo.
 // Funkcija treba da vrati true ako je string palindrom, inače false.
 // Na primer, za ulazni string "radar" funkcija treba da vrati true, dok za ulazni string "hello" funkcija treba da vrati false.
+
+// Zadatak 1.
+// myFunc = (rec, rec2) => rec.concat(rec2);
+// console.log(myFunc("Hello", "World"));
+
+//Zadatak 2.
+
+myFunc = (rec) => {
+  let rec2 = "";
+  let duzina = rec.length;
+  for (let i = duzina - 1; i >= 0; i--) {
+    rec2 += duzina[i];
+  }
+  if (rec === rec2) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(myFunc("radar"));
