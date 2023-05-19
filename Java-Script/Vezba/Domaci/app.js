@@ -345,16 +345,40 @@
 
 //Zadatak 2.
 
-myFunc = (rec) => {
-  let rec2 = "";
-  for (let i = rec.length - 1; i >= 0; i--) {
-    rec2 += rec[i];
-  }
-  if (rec === rec2) {
-    return true;
-  } else {
-    return false;
-  }
-};
-console.log(myFunc("radar"));
-console.log(myFunc("hello"));
+// myFunc = (rec) => {
+//   let rec2 = "";
+//   for (let i = rec.length - 1; i >= 0; i--) {
+//     rec2 += rec[i];
+//   }
+//   if (rec === rec2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// console.log(myFunc("radar"));
+// console.log(myFunc("hello"));
+//--------------------------
+// Napraviti funkciju koja uzima neki trocifren broj za argument i vraca zbir cifara tog broja.
+// Na primer, za argument 234, rezultat treba biti 9.
+// Pretvaranje broja u string se vrsi preko toString() metoda.
+
+// isThreeDigit = (num) => {
+//   let str = num.toString();
+//   let split = str.split("");
+//   let num1 = split.slice(0, 1);
+//   let num2 = split.slice(1, 2);
+//   let num3 = split.slice(2, 3);
+//   let pNum1 = parseInt(num1);
+//   let pNum2 = parseInt(num2);
+//   let pNum3 = parseInt(num3);
+//   let sum = pNum1 + pNum2 + pNum3;
+
+//   if (str.length !== 3) {
+//     return "You need to insert three digit number";
+//   } else {
+//     return `Your sum is = ${sum}`;
+//   }
+// };
+// console.log(isThreeDigit(234));
+// console.log(isThreeDigit(55));
