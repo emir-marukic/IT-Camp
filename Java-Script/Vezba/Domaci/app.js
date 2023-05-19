@@ -345,31 +345,16 @@
 
 //Zadatak 2.
 
-// myFunc = (rec) => {
-//   let rec2 = "";
-//   for (let i = rec.length - 1; i >= 0; i--) {
-//     rec2 += rec[i];
-//   }
-//   if (rec === rec2) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// };
-// console.log(myFunc("hello"));
-// console.log(myFunc("radar"));
-// console.log(myFunc("ana"));
-
-// function isPalindrom(str) {
-//   let revStr = "";
-//   for (let i = str.length - 1; i >= 0; i--) {
-//     revStr += str[i];
-//   }
-//   if (str === revStr) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
-// console.log(isPalindrom("radar"));
-// console.log(isPalindrom("hello"));
+myFunc = (rec) => {
+  let rec2 = "";
+  let duzina = rec.length;
+  for (let i = duzina - 1; i >= 0; i--) {
+    rec2 += duzina[i];
+  }
+  if (rec === rec2) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(myFunc("radar"));
