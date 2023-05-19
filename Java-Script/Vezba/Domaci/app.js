@@ -347,9 +347,8 @@
 
 myFunc = (rec) => {
   let rec2 = "";
-  let duzina = rec.length;
-  for (let i = duzina - 1; i >= 0; i--) {
-    rec2 += duzina[i];
+  for (let i = rec.length - 1; i >= 0; i--) {
+    rec2 += rec[i];
   }
   if (rec === rec2) {
     return true;
@@ -358,3 +357,4 @@ myFunc = (rec) => {
   }
 };
 console.log(myFunc("radar"));
+console.log(myFunc("hello"));
