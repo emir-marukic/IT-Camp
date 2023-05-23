@@ -55,3 +55,49 @@
 // }
 
 // console.log(howMany("koliko je 20 km u grame"));
+//----------------------
+// Domaci zadaci:
+// Napraviti funkciju koja ispituje argument.
+// Ako se u recenici nadje rec "skola", neka se vrati pozicija prvog pojavljivanja date reci.
+// Ako recenica pocinje sa recju "Automobil" neka se vrati boolean true;
+// Ako je recenica parne duzine neka se vrati broj pojavljivanja reci "kuca".
+// Inace vratiti duzinu datog stinga.
+//----------------------
+
+// myFunc = (recenica) => {
+//   if (recenica.startsWith("Automobil")) {
+//     return true;
+//   } else if (recenica.match("skola")) {
+//     return recenica.indexOf("skola");
+//   } else if (recenica % 2 === 0) {
+//     let reci = recenica.split(" ");
+//     let brojac = 0;
+//     for (let i = 0; i < reci.length; i++) {
+//       if (reci[i] === "kuca") {
+//        brojac++;
+//       }
+//     }
+//   } else {
+//     return recenica.length;
+//   }
+// };
+// console.log(myFunc("Automobil je brzo sredstva."));
+// console.log(myFunc("skola je jako dobra."));
+// console.log(myFunc("Danas je lep dan ."));
+// console.log(myFunc("Ovo je neka random recenica."));
+
+// 3.	Prebrojati koliko ima malih slova u unetom stringu. Slova koja se koriste u stringu pripadaju isključivo engleskoj abecedi.
+//----------------------
+
+lowerCase = (recenica) => {
+  let brojac = 0;
+  for (let i = 0; i < recenica.length; i++) {
+    const karakter = recenica[i];
+    if (karakter >= "a" && karakter <= "z") {
+      brojac++;
+    }
+  }
+  return brojac;
+};
+
+console.log(lowerCase("ASTERIKS I obeliks"));
