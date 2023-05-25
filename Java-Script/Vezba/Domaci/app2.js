@@ -88,16 +88,41 @@
 
 // 3.	Prebrojati koliko ima malih slova u unetom stringu. Slova koja se koriste u stringu pripadaju isključivo engleskoj abecedi.
 //----------------------
+// lowerCase = (recenica) => {
+//   let brojac = 0;
+//   for (let i = 0; i < recenica.length; i++) {
+//     const karakter = recenica[i];
+//     if (karakter >= "a" && karakter <= "z") {
+//       brojac++;
+//     }
+//   }
+//   return brojac;
+// };
+// console.log(lowerCase("ASTERIKS I obeliks"));
+//----------------------
 
-lowerCase = (recenica) => {
-  let brojac = 0;
-  for (let i = 0; i < recenica.length; i++) {
-    const karakter = recenica[i];
-    if (karakter >= "a" && karakter <= "z") {
-      brojac++;
-    }
-  }
-  return brojac;
-};
+// 1.	Sva velika slova u stringu treba svesti na mala slova. Npr. za uneto 'WEBnSTUDY.com', dobija se novi string 'webnstudy.com'.
+// Slova koja se koriste u stringu pripadaju isključivo engleskoj abecedi.
 
-console.log(lowerCase("ASTERIKS I obeliks"));
+// svaMala = (str) => {
+//   const newStr = str.toLowerCase();
+//   return newStr;
+// };
+
+// console.log(svaMala("WEBnSTUDY.com"));
+//----------------------
+// 2.	Pronaći poziciju poslednjeg razmaka u stringu. Npr. za uneto 'Pera ima devojku', rezultat je 8.
+// function lastSpace(str) {
+//   const newStr = str.lastIndexOf(" ");
+//   return newStr;
+// }
+// console.log(lastSpace("Pera ima devojku"));
+
+// 3.	Ispisati dužinu prve reči unetog stringa. Npr. za uneto 'Pera ima devojku', rezultat je 4. Podrazumeva se da uneti string nema vodeće razmake.
+
+// const firstChar = (str) => {
+//   let splitStr = str.split(" ");
+//   let newStr = splitStr[0];
+//   return newStr.length;
+// };
+// console.log(firstChar("Pera ima devojku"));
