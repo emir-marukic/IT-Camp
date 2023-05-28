@@ -126,3 +126,13 @@
 //   return newStr.length;
 // };
 // console.log(firstChar("Pera ima devojku"));
+
+// Domaci:
+// 1.	Izdvojiti N znakova sa desne strane (poslednjih N znakova) unetog stringa. Npr. za string 'Pera ima devojku' i N=5, dobija se 'vojku'.
+
+revStr = (recenica, n) => {
+  let newStr = recenica.slice(-n);
+  return newStr;
+};
+
+console.log(revStr("Pera ima devojku", 5));
