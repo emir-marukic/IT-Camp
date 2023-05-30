@@ -130,6 +130,27 @@
 // Domaci:
 // 1.	Izdvojiti N znakova sa desne strane (poslednjih N znakova) unetog stringa. Npr. za string 'Pera ima devojku' i N=5, dobija se 'vojku'.
 
-revStr = (recenica, n) => recenica.slice(-n);
+// revStr = (recenica, n) => recenica.slice(-n);
 
-console.log(revStr("Pera ima devojku", 5));
+// console.log(revStr("Pera ima devojku", 5));
+//----------------------
+
+// Domaci:
+// 1. Write a JavaScript function to hide email addresses to protect from unauthorized user.
+// console.log(protectEmail("robin_singh@example.com")); (posle imena moze biti ili _ ili .)
+// "robin...@example.com"
+
+email = (email) => {
+  const underLine = email.indexOf("_");
+  const dot = email.indexOf(".");
+  const at = email.indexOf("@");
+
+  if (underLine !== -1) {
+    const removeUnderLine = email.slice(underLine, at);
+    return email.replace(removeUnderLine, "...");
+  } else if (dot !== -1) {
+    const removeDot = email.slice(dot, at);
+    return email.replace(removeDot, "...");
+  }
+};
+console.log(email("robin.singh@example.com"));
