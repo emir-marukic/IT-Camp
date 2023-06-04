@@ -154,3 +154,13 @@
 //   }
 // };
 // console.log(email("robin_singh@gmail.com"));
+function pretvoriSekunde() {
+  let sekunde = +prompt("Unesite sekunde :");
+  let sati = Math.floor(sekunde / 3600);
+  let minute = Math.floor((sekunde % 3600) / 60);
+  let preostaleSekunde = sekunde % 60;
+
+  return `Sata - ${sati}, minuta - ${minute}, sekundi - ${preostaleSekunde}`;
+}
+
+console.log(pretvoriSekunde());
