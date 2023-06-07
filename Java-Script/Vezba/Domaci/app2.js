@@ -154,13 +154,85 @@
 //   }
 // };
 // console.log(email("robin_singh@gmail.com"));
-function pretvoriSekunde() {
-  let sekunde = +prompt("Unesite sekunde :");
-  let sati = Math.floor(sekunde / 3600);
-  let minute = Math.floor((sekunde % 3600) / 60);
-  let preostaleSekunde = sekunde % 60;
+// Domaci zadaci:
+// function pretvoriSekunde() {
+//   let sekunde = +prompt("Unesite sekunde :");
+//   let sati = Math.floor(sekunde / 3600);
+//   let minute = Math.floor((sekunde % 3600) / 60);
+//   let preostaleSekunde = sekunde % 60;
 
-  return `Sata - ${sati}, minuta - ${minute}, sekundi - ${preostaleSekunde}`;
+//   return `Sata - ${sati}, minuta - ${minute}, sekundi - ${preostaleSekunde}`;
+// }
+
+// console.log(pretvoriSekunde());
+//----------------------
+
+// 1.
+// a=int(input('Unesite prvu potencijalnu stranicu pravougaonika: '))
+// b=int(input('Unesite drugu potencijalnu stranicu pravougaonika: '))
+// c=int(input('Unesite trecu potencijalnu stranicu pravougaonika: '))
+// d=int(input('Unesite cetvrtu potencijalnu stranicu pravougaonika: '))
+//----------------------
+
+// pravougaonik = () => {
+//   let a = +prompt("Unesite prvu potencijalnu stranicu pravougaonika ");
+//   let b = +prompt("Unesite prvu potencijalnu stranicu pravougaonika ");
+//   let c = +prompt("Unesite prvu potencijalnu stranicu pravougaonika ");
+//   let d = +prompt("Unesite prvu potencijalnu stranicu pravougaonika ");
+//   if ((a === b && c === d) || (a === c && b === d) || (a === c && b === d)) {
+//     return "Pravougaonik!";
+//   } else {
+//     return "Nije pravougaonik";
+//   }
+// };
+// console.log(pravougaonik());
+//----------------------
+
+// Napraviti funkciju koja:
+// Domaci:
+// // b) pretvara m u km
+// const mToKM = (m) => m / 1000;
+// console.log(mToKM(1532));
+//----------------------
+
+// c) pretvara inch u cm
+// const incToCm = (inch) => inch * 2.54;
+
+// console.log(incToCm(10));
+//----------------------
+
+// 2. Napraviti funkciju koja prima jedan argument (broj) i vraca poruku da li je
+// dati argument palindrom.
+
+// isPalindrom = (num) => {
+//   let str = "";
+//   for (let i = num.length - 1; i >= 0; i--) {
+//     str += num[i];
+//   }
+//   if (isNaN(num)) {
+//     return "Niste uneli vazeci broj";
+//   } else if (str === num) {
+//     return "Palindrom";
+//   } else {
+//     return "Nije palindrom";
+//   }
+// };
+// console.log(isPalindrom("12121"));
+// console.log(isPalindrom("121211"));
+//----------------------
+
+// 3. Napraviti funkciju koja ocekuje trocifren broj, a vraca dvocifren (iskljuci cifru desetice).
+
+function trocifren(num) {
+  let str = num.toString();
+  let splNum = str.split("");
+  let jedinica = splNum[0];
+  let stotina = splNum[2];
+  if (splNum.length > 3) {
+    return "Niste uneli trocifren broj";
+  } else {
+    return jedinica + stotina;
+  }
 }
-
-console.log(pretvoriSekunde());
+console.log(trocifren(156));
+console.log(trocifren(1565));
