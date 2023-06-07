@@ -164,3 +164,16 @@ function pretvoriSekunde() {
 }
 
 console.log(pretvoriSekunde());
+
+pravougaonik = () => {
+  let a = +prompt("Unesite prvu potencojalmu stranicu kvadrata ");
+  let b = +prompt("Unesite prvu potencojalmu stranicu kvadrata ");
+  let c = +prompt("Unesite prvu potencojalmu stranicu kvadrata ");
+  let d = +prompt("Unesite prvu potencojalmu stranicu kvadrata ");
+
+  if ((a === b && c === d) || (a === c && b === d) || (a === d && b === c)) {
+    return "Pravougaonik";
+  } else {
+    return "Nije pravougaonik";
+  }
+};
