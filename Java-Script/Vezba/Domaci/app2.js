@@ -190,10 +190,10 @@
 
 // Napraviti funkciju koja:
 // Domaci:
-// // b) pretvara m u km
+// b) pretvara m u km
 // const mToKM = (m) => m / 1000;
 // console.log(mToKM(1532));
-//----------------------
+// ----------------------
 
 // c) pretvara inch u cm
 // const incToCm = (inch) => inch * 2.54;
@@ -223,34 +223,17 @@
 
 // 3. Napraviti funkciju koja ocekuje trocifren broj, a vraca dvocifren (iskljuci cifru desetice).
 
-function trocifren(num) {
-  let str = num.toString();
-  let splNum = str.split("");
-  let jedinica = splNum[0];
-  let stotina = splNum[2];
-  if (splNum.length > 3) {
-    return "Niste uneli trocifren broj";
-  } else {
-    return jedinica + stotina;
-  }
-}
-<<<<<<< HEAD
+// function trocifren(num) {
+//   let str = num.toString();
+//   let splNum = str.split("");
+//   let jedinica = splNum[0];
+//   let stotina = splNum[2];
+//   if (splNum.length > 3) {
+//     return "Niste uneli trocifren broj";
+//   } else {
+//     return Number(jedinica + stotina);
+//   }
+// }
 
-console.log(pretvoriSekunde());
-
-pravougaonik = () => {
-  let a = +prompt("Unesite prvu potencojalmu stranicu kvadrata ");
-  let b = +prompt("Unesite prvu potencojalmu stranicu kvadrata ");
-  let c = +prompt("Unesite prvu potencojalmu stranicu kvadrata ");
-  let d = +prompt("Unesite prvu potencojalmu stranicu kvadrata ");
-
-  if ((a === b && c === d) || (a === c && b === d) || (a === d && b === c)) {
-    return "Pravougaonik";
-  } else {
-    return "Nije pravougaonik";
-  }
-};
-
-console.log(trocifren(156));
-console.log(trocifren(1565));
-
+// console.log(trocifren(156));
+// console.log(trocifren(1565));
