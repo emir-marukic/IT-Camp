@@ -190,10 +190,10 @@
 
 // Napraviti funkciju koja:
 // Domaci:
-// // b) pretvara m u km
+// b) pretvara m u km
 // const mToKM = (m) => m / 1000;
 // console.log(mToKM(1532));
-//----------------------
+// ----------------------
 
 // c) pretvara inch u cm
 // const incToCm = (inch) => inch * 2.54;
@@ -223,65 +223,16 @@
 
 // 3. Napraviti funkciju koja ocekuje trocifren broj, a vraca dvocifren (iskljuci cifru desetice).
 
-// function trocifren(num) {
-//   let str = num.toString();
-//   let splNum = str.split("");
-//   let jedinica = splNum[0];
-//   let stotina = splNum[2];
-//   if (splNum.length > 3) {
-//     return "Niste uneli trocifren broj";
-//   } else {
-//     return jedinica + stotina;
-//   }
-// }
-// console.log(trocifren(156));
-// console.log(trocifren(1565));
-//----------------------
-
-// 1. Napraviti funkciju koja ocekuje cetvorocifren broj, a vraca broj kojem su zamenjene prva i treca cifra, kao i druga i cetvrta cifra.
-// 4752
-// 5247
-
-shuffle = (num) => {
+function trocifren(num) {
   let str = num.toString();
-  let spl = str.split("");
-  let num1 = spl[0];
-  let num2 = spl[1];
-  let num3 = spl[2];
-  let num4 = spl[3];
-  if ((isNaN(spl) && str.length > 4) || str.length < 4) {
-    return "Niste uneli tacne podatke";
+  let splNum = str.split("");
+  let jedinica = splNum[0];
+  let stotina = splNum[2];
+  if (splNum.length > 3) {
+    return "Niste uneli trocifren broj";
   } else {
-    return Number(`${num3}${num4}${num1}${num2}`);
-  }
-};
-console.log(shuffle("4752"));
-console.log(shuffle("4752s"));
-console.log(shuffle("47522"));
-console.log(shuffle("475"));
-
-// 2. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
-
-function near100(a, b) {
-  let differenceA = a - 100;
-  let differenceB = b - 100;
-
-  if (differenceA < 0) {
-    differenceA = -differenceA;
-  }
-
-  if (differenceB < 0) {
-    differenceB = -differenceB;
-  }
-
-  if (differenceA < differenceB) {
-    return a;
-  } else if (differenceB < differenceA) {
-    return b;
-  } else {
-    return "Vrenosti su jednake ";
+    return jedinica + stotina;
   }
 }
-
-var nearestValue = near100(99, 101);
-console.log("Najblizi 100 je " + nearestValue);
+console.log(trocifren(156));
+console.log(trocifren(1565));

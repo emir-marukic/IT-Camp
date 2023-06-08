@@ -345,16 +345,44 @@
 
 //Zadatak 2.
 
-myFunc = (rec) => {
-  let rec2 = "";
-  let duzina = rec.length;
-  for (let i = duzina - 1; i >= 0; i--) {
-    rec2 += duzina[i];
-  }
-  if (rec === rec2) {
-    return true;
+// myFunc = (rec) => {
+//   let rec2 = "";
+//   let duzina = rec.length;
+//   for (let i = duzina - 1; i >= 0; i--) {
+//     rec2 += duzina[i];
+//   }
+//   if (rec === rec2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// console.log(myFunc("radar"));
+//-------------------
+// Write a JavaScript program to check a pair of numbers
+//  and return true if one of the numbers is 50 or if their sum is 50.
+
+// isFifty = (num, num2) => {
+//   if (isNaN(num) || isNaN(num2)) {
+//     return "Niste uneli tacan broj";
+//   } else if (num + num2 === 50) {
+//     return true;
+//   } else if (num === 50 || num2 === 50) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// console.log(isFifty(50, 50));
+
+// 21. Write a JavaScript program to create another string by adding
+// "Py" in front of a given string. If the given string begins with "Py" return the original string.
+
+function py(str) {
+  if (str === "Py") {
+    return str;
   } else {
-    return false;
+    return "Py" + str;
   }
-};
-console.log(myFunc("radar"));
+}
+console.log(py("Python"));
