@@ -379,10 +379,10 @@
 // "Py" in front of a given string. If the given string begins with "Py" return the original string.
 
 function py(str) {
-  if (str === "Py") {
+  if (str[0] === "P" && str[1] === "y") {
     return str;
   } else {
-    return "Py" + str;
+    return "Py" + str.toLowerCase();
   }
 }
 console.log(py("Python"));
