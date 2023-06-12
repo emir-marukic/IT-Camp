@@ -223,16 +223,38 @@
 
 // 3. Napraviti funkciju koja ocekuje trocifren broj, a vraca dvocifren (iskljuci cifru desetice).
 
-function trocifren(num) {
-  let str = num.toString();
-  let splNum = str.split("");
-  let jedinica = splNum[0];
-  let stotina = splNum[2];
-  if (splNum.length > 3) {
-    return "Niste uneli trocifren broj";
+//
+// 1. Write a JavaScript program to check whether two numbers are in range 40..60
+//  or in the range 70..100 inclusive.
+
+// const range = (num1, num2) => {
+//   if ((num1 > 40 && num1 < 60) || (num2 > 40 && num2 < 60)) {
+//     return `${num1} i ${num2} su u prvoj koloni`;
+//   } else if ((num1 > 70 && num1 < 100) || (num2 > 70 && num2 < 100)) {
+//     return `${num1} i ${num2} su u drugoj koloni`;
+//   } else {
+//     return "Niste poslali dobre vrednosti";
+//   }
+// };
+
+// console.log(range(41, 50));
+// console.log(range(72, 90));
+// console.log(range(1, 2));
+
+// 2. Write a JavaScript program to find the larger number from the two given positive integers,
+//  the two numbers are in the range 40..60 inclusive.
+
+const highest = (num1, num2) => {
+  let n1 = Math.abs(num1 - 60);
+  let n2 = Math.abs(num2 - 60);
+  let higher = n1 > n2 ? num2 : num1;
+  if (num1 <= 0 || num2 <= 0) {
+    return "Ne mozete uneti negativne vrednosti";
+  } else if ((num1 > 40 && num2 < 60) || (num2 > 40 && num1 < 60)) {
+    return `Broj ${higher} je veci`;
   } else {
-    return jedinica + stotina;
+    return "Nijedan uslov nije ispunjen";
   }
-}
-console.log(trocifren(156));
-console.log(trocifren(1565));
+};
+
+console.log(highest(50, 60));
