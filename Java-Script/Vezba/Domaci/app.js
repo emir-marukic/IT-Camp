@@ -390,12 +390,62 @@
 // Write a JavaScript program to compute the sum of the two given integers.
 // If the two values are the same, then return triple their sum.
 
-compute = (num1, num2) => {
-  if (num1 === num2) {
-    return num1 ** 3;
-  } else {
-    return num1 + num2;
-  }
+// compute = (num1, num2) => {
+//   if (num1 === num2) {
+//     return num1 ** 3;
+//   } else {
+//     return num1 + num2;
+//   }
+// };
+// console.log(compute(2, 3));
+// console.log(compute(2, 2));
+
+// 22. Write a JavaScript program to remove a character at the specified position
+//  in a given string and return the modified string.
+
+// const removeChar = (str, char) => {
+//   let newStr = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === char) {
+//       continue;
+//     } else {
+//       newStr += str[i];
+//     }
+//   }
+//   return newStr;
+// };
+
+// console.log(removeChar("nina", "n"));
+//-------------------------
+// 23. Write a JavaScript program to create a new string from a given string by changing the position
+//  of the first and last characters. The string length must be broader than or equal to 1.
+
+// const swapFirstAndLast = (str) => {
+//   let newStr = "";
+//   let firstChar = str[0];
+//   let lastChar = str.length - 1;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === [0]) {
+//       newStr += lastChar;
+//     } else if (str[i] === str.length - 1) {
+//       newStr += firstChar;
+//     } else {
+//       newStr += str[i];
+//     }
+//   }
+// };
+
+// console.log(swapFirstAndLast("emir"));
+//----------------
+
+const countMyAge = (birthDateString) => {
+  const birthDate = new Date(birthDateString);
+  const currentDate = new Date();
+  const birthMiliSeconds = Date.parse(birthDate);
+  const currrentMiliSeconds = Date.parse(currentDate);
+
+  const sub = currrentMiliSeconds - birthMiliSeconds;
+  const year = new Date(sub).getFullYear() - 1970;
+  return year;
 };
-console.log(compute(2, 3));
-console.log(compute(2, 2));
+console.log(countMyAge("2001-07-12"));

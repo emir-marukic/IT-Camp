@@ -236,29 +236,29 @@
 // }
 // console.log(trocifren(156));
 // console.log(trocifren(1565));
+//--------------------------
+// const getTime = () => {
+//   const date = new Date();
+//   const daysOfWeek = [
+//     "Monday",
+//     "Tuesday",
+//     "Wednesday",
+//     "Thursday",
+//     "Friday",
+//     "Saturday",
+//     "Sunday",
+//   ];
+//   const currentDay = daysOfWeek[date.getDay() - 1];
+//   const currentHour = date.getHours();
+//   const currentMinutes = date.getMinutes();
+//   const currentSeconds = date.getSeconds();
+//   const meridiem = currentHour >= 12 ? "PM" : "AM";
 
-const getTime = () => {
-  const date = new Date();
-  const daysOfWeek = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
-  const currentDay = daysOfWeek[date.getDay() - 1];
-  const currentHour = date.getHours();
-  const currentMinutes = date.getMinutes();
-  const currentSeconds = date.getSeconds();
-  const meridiem = currentHour >= 12 ? "PM" : "AM";
+//   const formatedTime = `${currentHour} ${meridiem} : ${
+//     currentMinutes < 10 ? "0" + currentMinutes : currentMinutes
+//   } M : ${currentSeconds < 10 ? "0" + currentSeconds : currentSeconds} S`;
 
-  const formatedTime = `${currentHour} ${meridiem} : ${
-    currentMinutes < 10 ? "0" + currentMinutes : currentMinutes
-  } M : ${currentSeconds < 10 ? "0" + currentSeconds : currentSeconds} S`;
+//   return `Today is : ${currentDay} \nCurrent time is : ${formatedTime}`;
+// };
 
-  return `Today is : ${currentDay} \nCurrent time is : ${formatedTime}`;
-};
-
-console.log(getTime());
+// console.log(getTime());
