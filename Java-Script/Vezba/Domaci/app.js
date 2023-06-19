@@ -378,11 +378,24 @@
 // 21. Write a JavaScript program to create another string by adding
 // "Py" in front of a given string. If the given string begins with "Py" return the original string.
 
-function py(str) {
-  if (str === "Py") {
-    return str;
+// function py(str) {
+//   if (str[0] === "P" && str[1] === "y") {
+//     return str;
+//   } else {
+//     return "Py" + str.toLowerCase();
+//   }
+// }
+// console.log(py("Python"));
+
+// Write a JavaScript program to compute the sum of the two given integers.
+// If the two values are the same, then return triple their sum.
+
+compute = (num1, num2) => {
+  if (num1 === num2) {
+    return num1 ** 3;
   } else {
-    return "Py" + str;
+    return num1 + num2;
   }
-}
-console.log(py("Python"));
+};
+console.log(compute(2, 3));
+console.log(compute(2, 2));
