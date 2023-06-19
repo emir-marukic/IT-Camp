@@ -223,16 +223,42 @@
 
 // 3. Napraviti funkciju koja ocekuje trocifren broj, a vraca dvocifren (iskljuci cifru desetice).
 
-function trocifren(num) {
-  let str = num.toString();
-  let splNum = str.split("");
-  let jedinica = splNum[0];
-  let stotina = splNum[2];
-  if (splNum.length > 3) {
-    return "Niste uneli trocifren broj";
-  } else {
-    return jedinica + stotina;
-  }
-}
-console.log(trocifren(156));
-console.log(trocifren(1565));
+// function trocifren(num) {
+//   let str = num.toString();
+//   let splNum = str.split("");
+//   let jedinica = splNum[0];
+//   let stotina = splNum[2];
+//   if (splNum.length > 3) {
+//     return "Niste uneli trocifren broj";
+//   } else {
+//     return jedinica + stotina;
+//   }
+// }
+// console.log(trocifren(156));
+// console.log(trocifren(1565));
+
+const getTime = () => {
+  const date = new Date();
+  const daysOfWeek = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  const currentDay = daysOfWeek[date.getDay() - 1];
+  const currentHour = date.getHours();
+  const currentMinutes = date.getMinutes();
+  const currentSeconds = date.getSeconds();
+  const meridiem = currentHour >= 12 ? "PM" : "AM";
+
+  const formatedTime = `${currentHour} ${meridiem} : ${
+    currentMinutes < 10 ? "0" + currentMinutes : currentMinutes
+  } M : ${currentSeconds < 10 ? "0" + currentSeconds : currentSeconds} S`;
+
+  return `Today is : ${currentDay} \nCurrent time is : ${formatedTime}`;
+};
+
+console.log(getTime());
