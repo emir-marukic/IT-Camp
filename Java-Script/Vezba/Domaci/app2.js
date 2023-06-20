@@ -262,3 +262,37 @@
 // };
 
 // console.log(getTime());
+//---------------------
+// Domaci:
+// 1. Write a JavaScript function to check whether an `input` is an array or not.
+
+// const ifInput = (arr) => Array.isArray(arr);
+// console.log(ifInput([1, 2, 3]));
+// console.log(ifInput("Cartoon"));
+// console.log(ifInput(1, 2, 3));
+//---------------------
+// 2. Write a JavaScript function to clone an array.
+
+// const cloneArr = (arr) => {
+//   let newArr = [];
+//   if (Array.isArray(arr)) {
+//     for (let i = 0; i < arr.length; i++) {
+//       newArr += arr[i];
+//     }
+//   } else {
+//     return "Its not array";
+//   }
+//   return newArr;
+// };
+// console.log(cloneArr(1, 2, 3));
+// console.log(cloneArr([1, 2, 3]));
+// 3. Write a JavaScript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array.
+
+function firstElement(arr, n = 1) {
+  if (Array.isArray(arr)) {
+    return arr.slice(0, n);
+  } else {
+    return "It isnt array";
+  }
+}
+console.log(firstElement([1, 2, 3, 4], 3));
