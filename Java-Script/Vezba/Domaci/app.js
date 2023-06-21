@@ -421,31 +421,30 @@
 //  of the first and last characters. The string length must be broader than or equal to 1.
 
 // const swapFirstAndLast = (str) => {
-//   let newStr = "";
-//   let firstChar = str[0];
-//   let lastChar = str.length - 1;
-//   for (let i = 0; i < str.length; i++) {
-//     if (str[i] === [0]) {
-//       newStr += lastChar;
-//     } else if (str[i] === str.length - 1) {
-//       newStr += firstChar;
-//     } else {
-//       newStr += str[i];
-//     }
-//   }
+//   const firstChar = str[0];
+//   const lastChar = str[str.length - 1];
+//   const middleChars = str.slice(1, -1);
+//   return lastChar + middleChars + firstChar;
 // };
 
 // console.log(swapFirstAndLast("emir"));
 //----------------
 
-const countMyAge = (birthDateString) => {
-  const birthDate = new Date(birthDateString);
-  const currentDate = new Date();
-  const birthMiliSeconds = Date.parse(birthDate);
-  const currrentMiliSeconds = Date.parse(currentDate);
+// const countMyAge = (birthDateString) => {
+//   const birthDate = new Date(birthDateString);
+//   const currentDate = new Date();
+//   const birthMiliSeconds = Date.parse(birthDate);
+//   const currrentMiliSeconds = Date.parse(currentDate);
 
-  const sub = currrentMiliSeconds - birthMiliSeconds;
-  const year = new Date(sub).getFullYear() - 1970;
-  return year;
-};
-console.log(countMyAge("2001-07-12"));
+//   const sub = currrentMiliSeconds - birthMiliSeconds;
+//   const year = new Date(sub).getFullYear() - 1970;
+//   return year;
+// };
+// console.log(countMyAge("2001-07-12"));
+
+//--------------
+
+// 60. Write a JavaScript program to create a new string without the first and last characters of a given string.
+
+// const firstAndLast = (str) => str.slice(1, -1);
+// console.log(firstAndLast("emir"));
