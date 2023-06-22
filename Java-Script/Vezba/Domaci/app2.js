@@ -273,26 +273,55 @@
 // ---------------------
 // 2. Write a JavaScript function to clone an array.
 
-const cloneArr = (arr) => {
-  let newArr = [];
-  if (Array.isArray(arr)) {
-    for (let i = 0; i < arr.length; i++) {
-      newArr += arr[i];
-    }
-  } else {
-    return "Its not array";
-  }
-  return newArr;
-};
-console.log(cloneArr(1, 2, 3));
-console.log(cloneArr([1, 2, 3]));
+// const cloneArr = (arr) => {
+//   let newArr = [];
+//   if (Array.isArray(arr)) {
+//     for (let i = 0; i < arr.length; i++) {
+//       newArr += arr[i];
+//     }
+//   } else {
+//     return "Its not array";
+//   }
+//   return newArr;
+// };
+// console.log(cloneArr(1, 2, 3));
+// console.log(cloneArr([1, 2, 3]));
 // 3. Write a JavaScript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array.
 
-function firstElement(arr, n = 1) {
-  if (Array.isArray(arr)) {
-    return arr.slice(0, n);
-  } else {
-    return "It isnt array";
+// function firstElement(arr, n = 1) {
+//   if (Array.isArray(arr)) {
+//     return arr.slice(0, n);
+//   } else {
+//     return "It isnt array";
+//   }
+// }
+// console.log(firstElement([1, 2, 3, 4]));
+
+// Iz datog niza ispitati koliko elemenata je tipa string,
+// koliko tipa number,
+// koliko tipa boolean,
+// koliko elemenata je zapravo niz?
+// ---------------------
+
+let niz = [1, 2, 3, true, false, true, [1, 2, 3, 4], "string"];
+
+const howMuchElement = (arr) => {
+  let countNum = 0;
+  let countBool = 0;
+  let countArr = 0;
+  let countStr = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === "number") {
+      countNum++;
+    } else if (typeof arr[i] === "boolean") {
+      countBool++;
+    } else if (typeof arr[i] === "string") {
+      countStr++;
+    } else if (Array.isArray(arr[i])) {
+      countArr++;
+    }
   }
-}
-console.log(firstElement([1, 2, 3, 4]));
+  return `In our array we have:\n Number: ${countNum}\n Boolean: ${countBool}\n Array: ${countArr}\n String: ${countStr}`;
+};
+
+console.log(howMuchElement(niz));
