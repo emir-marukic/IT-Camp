@@ -303,25 +303,95 @@
 // koliko elemenata je zapravo niz?
 // ---------------------
 
-let niz = [1, 2, 3, true, false, true, [1, 2, 3, 4], "string"];
+// let niz = [1, 2, 3, true, false, true, [1, 2, 3, 4], "string"];
 
-const howMuchElement = (arr) => {
-  let countNum = 0;
-  let countBool = 0;
-  let countArr = 0;
-  let countStr = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] === "number") {
-      countNum++;
-    } else if (typeof arr[i] === "boolean") {
-      countBool++;
-    } else if (typeof arr[i] === "string") {
-      countStr++;
-    } else if (Array.isArray(arr[i])) {
-      countArr++;
-    }
-  }
-  return `In our array we have:\n Number: ${countNum}\n Boolean: ${countBool}\n Array: ${countArr}\n String: ${countStr}`;
-};
+// const howMuchElement = (arr) => {
+//   let countNum = 0;
+//   let countBool = 0;
+//   let countArr = 0;
+//   let countStr = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === "number") {
+//       countNum++;
+//     } else if (typeof arr[i] === "boolean") {
+//       countBool++;
+//     } else if (typeof arr[i] === "string") {
+//       countStr++;
+//     } else if (Array.isArray(arr[i])) {
+//       countArr++;
+//     }
+//   }
+//   return `In our array we have:\n Number: ${countNum}\n Boolean: ${countBool}\n Array: ${countArr}\n String: ${countStr}`;
+// };
 
-console.log(howMuchElement(niz));
+// console.log(howMuchElement(niz));
+// ---------------------
+//  1. Napraviti funkciju koja vraca najveci element nekog niza.
+
+// let niz = [1, 4, 10, 6, 7, 2];
+// const arrHighest = (arr) => {
+//   let highest = 0;
+//   for (let nums of arr) {
+//     if (nums > highest) {
+//       highest = nums;
+//     }
+//   }
+//   return highest;
+// };
+// console.log(arrHighest(niz));
+// ---------------------
+
+// 2. Napraviti funkciju koja vraca najmanji element nekog niza.
+
+// let niz = [4, 4, 10, 6, 7, 200];
+// const arrHighest = (arr) => {
+//   let highest = Number.MAX_VALUE;
+//   for (let nums of arr) {
+//     if (nums < highest) {
+//       highest = nums;
+//     }
+//   }
+//   return highest;
+// };
+// console.log(arrHighest(niz));
+// ---------------------
+
+// 3. Iz naseg niza grupa napraviti dva niza muskarci i devojke, s tim sto se Dzevdet, Marija, Melida i Tarik ne smeju naci.
+
+// const grupa = [
+//   "Emir",
+//   "Selver",
+//   "Nedim",
+//   "Dzevdet",
+//   "Tarik",
+//   "Alen",
+//   "Rifat",
+//   "Marija",
+//   "Melida",
+//   "Asija",
+//   "Dzana",
+//   "Ajsa",
+//   "Anastasija",
+//   "Merjem",
+// ];
+
+// const muskarci = grupa.slice(0, 3);
+// console.log(muskarci);
+// const devojke = grupa.slice(9, grupa.length);
+// console.log(devojke);
+// ---------------------
+
+//4. Napraviti funkciju koja pravi novi niz, koji ce sadrzati samo elemente koji su se nalazili na neparnim mestima unutar originalnog niza.
+
+// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+
+// const neparni = (arr) => {
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if ([i - 1] % 2 !== 0) {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   return newArr;
+// };
+// console.log(neparni(niz));
