@@ -395,3 +395,11 @@
 //   return newArr;
 // };
 // console.log(neparni(niz));
+
+// const brojevi = [1, 3, 5, 7, -2];
+// brojevi.sort((a, b) => a - b);
+// console.log(brojevi);
+// const najmanji = brojevi[0];
+// const najveci = brojevi.length - 1;
+// console.log(najmanji);
+// console.log(najveci);
