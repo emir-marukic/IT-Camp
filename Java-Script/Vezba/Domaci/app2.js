@@ -487,3 +487,33 @@
 
 // const star = (arr) => arr.join("*");
 // console.log(star(niz));
+//-----------
+
+// const niz = [2, 5, 100];
+// const nizPlus2 = niz.map((arr) => arr + arr);
+// console.log(nizPlus2);
+//-----------
+
+// 2) Take an array of numbers and make them strings
+
+// const arr = [1, 2, 3, 4];
+
+// toString = (callback) => {
+//   return callback.map(String);
+// };
+// console.log(toString(arr));
+//-----------
+
+// 3) Capitalize each of an array of names
+
+// const capitalizeName = (arr) =>
+//   arr.map((arr) => {
+//     const rest = arr.slice(1);
+//     if (arr[0]) {
+//       return arr[0].toUpperCase() + rest.toLowerCase();
+//     }
+//   });
+
+// const names = ["john", "JACOB", "jinGleHeimer", "schmidt"];
+
+// console.log(capitalizeName(names));
