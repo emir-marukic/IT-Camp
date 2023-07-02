@@ -403,7 +403,7 @@
 // const najveci = brojevi.length - 1;
 // console.log(najmanji);
 // console.log(najveci);
-<<<<<<< HEAD
+
 // ---------------------
 
 // Domaci:
@@ -414,16 +414,7 @@
 // const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 // const even = (arr) => {
 //   let newArr = [];
-=======
-//----------------
 
-// 1. Napraviti funkciju koja pravi novi niz, koji ce sadrzati samo elemente koji su se nalazili na parnim mestima unutar originalnog niza.
-// ----------------
-// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-
-// const evenArr = (arr) => {
-//   const newArr = [];
->>>>>>> 5aaae79f2d0fe9325ade31a48d4af2e3c3f4c658
 //   for (let i = 0; i < arr.length; i++) {
 //     if (i % 2 !== 0) {
 //       newArr.push(arr[i]);
@@ -431,20 +422,13 @@
 //   }
 //   return newArr;
 // };
-<<<<<<< HEAD
+
 // console.log(even(niz));
 // 2. Iz nekog niza izdvojiti sve parne brojeve.(Napraviti novi niz)
 
 // const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 // function evenNum(arr) {
-=======
-// console.log(evenArr(niz));
-//  2. Iz nekog niza izdvojiti sve parne brojeve.(Napraviti novi niz).
 
-// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-
-// const even = (arr) => {
->>>>>>> 5aaae79f2d0fe9325ade31a48d4af2e3c3f4c658
 //   const newArr = [];
 //   for (let item of arr) {
 //     if (item % 2 === 0) {
@@ -452,7 +436,6 @@
 //     }
 //   }
 //   return newArr;
-<<<<<<< HEAD
 // }
 // console.log(evenNum(niz));
 // ---------------------
@@ -460,15 +443,7 @@
 
 // const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 // function evenNum(arr) {
-=======
-// };
-// console.log(even(niz));
-// ----------------
-// 2. Iz nekog niza izdvojiti sve neparne brojeve.(Napraviti novi niz).
 
-// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-// const odd = (arr) => {
->>>>>>> 5aaae79f2d0fe9325ade31a48d4af2e3c3f4c658
 //   const newArr = [];
 //   for (let item of arr) {
 //     if (item % 2 !== 0) {
@@ -476,7 +451,6 @@
 //     }
 //   }
 //   return newArr;
-<<<<<<< HEAD
 // }
 // console.log(evenNum(niz));
 // ---------------------
@@ -491,36 +465,10 @@
 //       newArr.push(positive);
 //     } else {
 //       continue;
-=======
-// };
-// console.log(odd(niz));
 
-// ---------------
-// 4. Iz nekog niza izdvojiti sve pozitivne brojeve.(Napraviti novi niz)
-
-// const niz = [1, 2, 3, -4, 5, 6, -7, 8, -9, 10, -11, -12, 13, 14];
-// const positive = (arr) => {
-//   const newArr = [];
-//   for (let item of arr) {
-//     if (item > 0) {
-//       newArr.push(item);
->>>>>>> 5aaae79f2d0fe9325ade31a48d4af2e3c3f4c658
-//     }
-//   }
-//   return newArr;
-// };
-<<<<<<< HEAD
-// console.log(positiveNums(niz));
-//---------------------
-=======
-// console.log(positive(niz));
-
->>>>>>> 5aaae79f2d0fe9325ade31a48d4af2e3c3f4c658
 // 5. Za dati niz izvrsiti:
 // Sortiranje niza od najveceg ka najmanjem broju,
 // Sortiranje niza od najmanjeg ka najvecem broju.
-
-<<<<<<< HEAD
 // const niz = [1, -1, 2, -2, 3, -4, 0];
 // const sort = (arr) => {
 //   const minToMax = [...arr];
@@ -539,20 +487,3 @@
 
 // const star = (arr) => arr.join("*");
 // console.log(star(niz));
-=======
-// const niz = [1, 2, 3, -4, 5, 6, -7, 8, -9, 10, -11, -12, 13, 14];
-
-// const sort = (arr) => {
-//   let highest = arr.sort((a, b) => a - b);
-//   let nearest = arr.sort((a, b) => b - a);
-//   return `Highest :${highest} \nNearest: ${nearest}`;
-// };
-// console.log(sort(niz));
-// -----------
-// 6. Write a simple JavaScript program to join all elements of the following array into a string where is * between elements.
-
-// const niz = [1, 2, 3, 4, 5];
-// const arr = (arr) => arr.join("*");
-
-// console.log(arr(niz));
->>>>>>> 5aaae79f2d0fe9325ade31a48d4af2e3c3f4c658
