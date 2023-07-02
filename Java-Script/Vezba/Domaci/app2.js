@@ -403,3 +403,88 @@
 // const najveci = brojevi.length - 1;
 // console.log(najmanji);
 // console.log(najveci);
+// ---------------------
+
+// Domaci:
+// 1. Napraviti funkciju koja pravi novi niz, koji ce sadrzati samo elemente koji su se nalazili na parnim mestima unutar originalnog niza.
+// [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+// [2,4,6,8,10,12,14]
+// ---------------------
+// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+// const even = (arr) => {
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (i % 2 !== 0) {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   return newArr;
+// };
+// console.log(even(niz));
+// 2. Iz nekog niza izdvojiti sve parne brojeve.(Napraviti novi niz)
+
+// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+// function evenNum(arr) {
+//   const newArr = [];
+//   for (let item of arr) {
+//     if (item % 2 === 0) {
+//       newArr.push(item);
+//     }
+//   }
+//   return newArr;
+// }
+// console.log(evenNum(niz));
+// ---------------------
+// 3. Iz nekog niza izdvojiti sve neparne brojeve.(Napraviti novi niz)
+
+// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+// function evenNum(arr) {
+//   const newArr = [];
+//   for (let item of arr) {
+//     if (item % 2 !== 0) {
+//       newArr.push(item);
+//     }
+//   }
+//   return newArr;
+// }
+// console.log(evenNum(niz));
+// ---------------------
+// 4. Iz nekog niza izdvojiti sve pozitivne brojeve.(Napraviti novi niz)
+
+// const niz = [1, -1, 2, -2, 3, -4, 0];
+
+// const positiveNums = (arr) => {
+//   const newArr = [];
+//   for (let positive of arr) {
+//     if (positive > 0) {
+//       newArr.push(positive);
+//     } else {
+//       continue;
+//     }
+//   }
+//   return newArr;
+// };
+// console.log(positiveNums(niz));
+//---------------------
+// 5. Za dati niz izvrsiti:
+// Sortiranje niza od najveceg ka najmanjem broju,
+// Sortiranje niza od najmanjeg ka najvecem broju.
+
+// const niz = [1, -1, 2, -2, 3, -4, 0];
+// const sort = (arr) => {
+//   const minToMax = [...arr];
+//   const maxToMin = [...arr];
+//   minToMax.sort((a, b) => a - b);
+//   maxToMin.sort((a, b) => b - a);
+
+//   return `This array is going minimum to maximum : ${minToMax} \nThis array is going maximum to minimum : ${maxToMin}`;
+// };
+// console.log(sort(niz));
+//-----------
+
+// 6. Write a simple JavaScript program to join all elements of the following array into a string where is * between elements.
+
+// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const star = (arr) => arr.join("*");
+// console.log(star(niz));
