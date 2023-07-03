@@ -403,14 +403,18 @@
 // const najveci = brojevi.length - 1;
 // console.log(najmanji);
 // console.log(najveci);
-//----------------
 
+// ---------------------
+
+// Domaci:
 // 1. Napraviti funkciju koja pravi novi niz, koji ce sadrzati samo elemente koji su se nalazili na parnim mestima unutar originalnog niza.
-// ----------------
+// [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+// [2,4,6,8,10,12,14]
+// ---------------------
 // const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+// const even = (arr) => {
+//   let newArr = [];
 
-// const evenArr = (arr) => {
-//   const newArr = [];
 //   for (let i = 0; i < arr.length; i++) {
 //     if (i % 2 !== 0) {
 //       newArr.push(arr[i]);
@@ -418,12 +422,13 @@
 //   }
 //   return newArr;
 // };
-// console.log(evenArr(niz));
-//  2. Iz nekog niza izdvojiti sve parne brojeve.(Napraviti novi niz).
+
+// console.log(even(niz));
+// 2. Iz nekog niza izdvojiti sve parne brojeve.(Napraviti novi niz)
 
 // const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+// function evenNum(arr) {
 
-// const even = (arr) => {
 //   const newArr = [];
 //   for (let item of arr) {
 //     if (item % 2 === 0) {
@@ -431,13 +436,14 @@
 //     }
 //   }
 //   return newArr;
-// };
-// console.log(even(niz));
-// ----------------
-// 2. Iz nekog niza izdvojiti sve neparne brojeve.(Napraviti novi niz).
+// }
+// console.log(evenNum(niz));
+// ---------------------
+// 3. Iz nekog niza izdvojiti sve neparne brojeve.(Napraviti novi niz)
 
 // const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-// const odd = (arr) => {
+// function evenNum(arr) {
+
 //   const newArr = [];
 //   for (let item of arr) {
 //     if (item % 2 !== 0) {
@@ -445,40 +451,69 @@
 //     }
 //   }
 //   return newArr;
-// };
-// console.log(odd(niz));
-
-// ---------------
+// }
+// console.log(evenNum(niz));
+// ---------------------
 // 4. Iz nekog niza izdvojiti sve pozitivne brojeve.(Napraviti novi niz)
 
-// const niz = [1, 2, 3, -4, 5, 6, -7, 8, -9, 10, -11, -12, 13, 14];
-// const positive = (arr) => {
+// const niz = [1, -1, 2, -2, 3, -4, 0];
+
+// const positiveNums = (arr) => {
 //   const newArr = [];
-//   for (let item of arr) {
-//     if (item > 0) {
-//       newArr.push(item);
-//     }
-//   }
-//   return newArr;
-// };
-// console.log(positive(niz));
+//   for (let positive of arr) {
+//     if (positive > 0) {
+//       newArr.push(positive);
+//     } else {
+//       continue;
 
 // 5. Za dati niz izvrsiti:
 // Sortiranje niza od najveceg ka najmanjem broju,
 // Sortiranje niza od najmanjeg ka najvecem broju.
-
-// const niz = [1, 2, 3, -4, 5, 6, -7, 8, -9, 10, -11, -12, 13, 14];
-
+// const niz = [1, -1, 2, -2, 3, -4, 0];
 // const sort = (arr) => {
-//   let highest = arr.sort((a, b) => a - b);
-//   let nearest = arr.sort((a, b) => b - a);
-//   return `Highest :${highest} \nNearest: ${nearest}`;
+//   const minToMax = [...arr];
+//   const maxToMin = [...arr];
+//   minToMax.sort((a, b) => a - b);
+//   maxToMin.sort((a, b) => b - a);
+
+//   return `This array is going minimum to maximum : ${minToMax} \nThis array is going maximum to minimum : ${maxToMin}`;
 // };
 // console.log(sort(niz));
-// -----------
+//-----------
+
 // 6. Write a simple JavaScript program to join all elements of the following array into a string where is * between elements.
 
-// const niz = [1, 2, 3, 4, 5];
-// const arr = (arr) => arr.join("*");
+// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// console.log(arr(niz));
+// const star = (arr) => arr.join("*");
+// console.log(star(niz));
+//-----------
+
+// const niz = [2, 5, 100];
+// const nizPlus2 = niz.map((arr) => arr + arr);
+// console.log(nizPlus2);
+//-----------
+
+// 2) Take an array of numbers and make them strings
+
+// const arr = [1, 2, 3, 4];
+
+// toString = (callback) => {
+//   return callback.map(String);
+// };
+// console.log(toString(arr));
+//-----------
+
+// 3) Capitalize each of an array of names
+
+// const capitalizeName = (arr) =>
+//   arr.map((arr) => {
+//     const rest = arr.slice(1);
+//     if (arr[0]) {
+//       return arr[0].toUpperCase() + rest.toLowerCase();
+//     }
+//   });
+
+// const names = ["john", "JACOB", "jinGleHeimer", "schmidt"];
+
+// console.log(capitalizeName(names));
