@@ -1,19 +1,3 @@
-// Napisati JavaScript funkciju koja na osnovu operacije koju odaberemo izvršava sabiranje,
-// oduzimanje, množenje ili deljenje dva broja iz HTML forme, kao što je prikazano na slici, i
-// rezultat izvršavanja prikazuje u tekstualnom polju.
-
-// function ime(ime1, ime2) {
-//   if (
-//     ime1 === "Emir" ||
-//     ime1 === "emir" ||
-//     ime2 === "Emir" ||
-//     ime2 === "emir"
-//   ) {
-//     return "Emir je bolji support!!";
-//   }
-// }
-// console.log(ime("Maja", "emir"));
-//----------------------------------------
 // Napišite funkciju koja prima niz brojeva i vraća najveći broj u nizu.
 
 // function niz(num) {
@@ -119,3 +103,42 @@ lastElement([]) //null */
 //   }
 // };
 // console.log(lastElement([3, 5, 7]));
+
+// Write a JavaScript program to concatenate two
+// strings and return the result. If the length of the strings does not match, then remove the characters from the longer string.
+
+// const strings = (str1, str2) => {
+//   let newStr = "";
+//   const firstLg = str1.length;
+//   const secondLg = str2.length;
+//   if (firstLg === secondLg) {
+//     newStr = str1 + str2;
+//     return newStr;
+//   } else if (firstLg > secondLg) {
+//     newStr = str1.substring(0, secondLg) + str2;
+//     return newStr;
+//   } else if (firstLg < secondLg) {
+//     newStr = str1 + str2.substring(0, firstLg);
+//     return newStr;
+//   }
+// };
+// console.log(strings("Emir", "Marukic"));
+
+// const str = "Emir Marukic";
+
+// let slice = str.substring(0, 4);
+// console.log(slice);
+
+// Write a JavaScript program to find the largest value between the first
+// and last elements and set all the other elements to that value. Display the updated array.
+
+const brojevi = [1, 2, 3, 4, 5, 6];
+
+const veci = (num) => {
+  const largest = Math.max(num[0], num[num.length - 1]);
+  for (let i = 0; i < num.length; i++) {
+    num[i] = largest;
+  }
+  return num;
+};
+console.log(veci(brojevi));
