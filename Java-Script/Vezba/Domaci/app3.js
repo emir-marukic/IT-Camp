@@ -123,3 +123,42 @@
 // };
 
 // console.log(sum(array1, array2));
+
+// Write a JavaScript program to check whether a given array of integers represents a strictly increasing or decreasing sequence.
+
+// const int = [1, 2, 62, -65, 5, 12, -62, 4, 5, 36, 24];
+
+// const incOrDec = (arr) => {
+//   const sum = arr.reduce((prev, curr) => prev + curr);
+//   if (sum >= 0) {
+//     return `Integers are positive ${sum}`;
+//   } else {
+//     return `Integers are negative ${sum}`;
+//   }
+// };
+// console.log(incOrDec(int));
+
+//  Write a JavaScript program to find the longest string in a given array.
+
+// const arr = ["Emir", "Emina", "Lahina", "Mirsada", "Ramiz"];
+
+// const longestString = (arr) => {
+//   let longestStr = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length > longestStr.length) {
+//       longestStr = arr[i];
+//     } else if (longestStr.length === arr[i].length) {
+//       return (longestStr = `${longestStr}  ${arr[i]}`);
+//     }
+//   }
+//   return longestStr;
+// };
+// console.log(longestString(arr));
+
+const int = [1, 2, 62, -65, 5, 12, -62, 4, 5, 36, 24];
+
+// const even = int.filter((num) => num % 2 === 0);
+// console.log(even);
+
+const prvaPolovina = int.filter((element, index) => index.length / 2);
+console.log(prvaPolovina);

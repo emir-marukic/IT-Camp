@@ -517,3 +517,17 @@
 // const names = ["john", "JACOB", "jinGleHeimer", "schmidt"];
 
 // console.log(capitalizeName(names));
+
+// Write a JavaScript program to check whether a given string represents a correct sentence or not.
+//  A string is considered a correct sentence if it starts with a capital letter and ends with a full stop (.)
+
+// const isItCorrect = (str) => {
+//   const first = str[0];
+//   const last = str[str.length - 1];
+//   if (first === first.toUpperCase() && last === ".") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// console.log(isItCorrect("Dobar dan."));

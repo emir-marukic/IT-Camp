@@ -288,7 +288,7 @@
 //   }
 //   return brojac;
 // };
-// console.log(myFunc("la la"));
+// console.log(myFunc("asdsadsad adsadsad asdad"));
 //--------------------------
 // first = () => {
 //   const recenica = prompt("Unesite neku recenicu: ");
