@@ -482,17 +482,31 @@ const randomTftComp = (
   p8 = 0
 ) => {
   const argumentsArr = [p1, p2, p3, p4, p5, p6, p7, p8];
-  const filteredArr = argumentsArr.filter((element) => element !== 0);
+  const filteredArr = argumentsArr
+    .filter((element) => element !== 0)
+    .map((element) => element[0].toUpperCase() + element.slice(1));
   const getRandomElement = (arr) => {
     let tftRandomComp = Math.floor(Math.random() * arr.length);
     let selectedElement = arr[tftRandomComp];
-    while (filteredArr.includes(selectedElement)) {
-      tftRandomComp = Math.floor(Math.random() * arr.length);
-      selectedElement = arr[tftRandomComp];
-    }
+    arr.splice(tftRandomComp, 1);
     return selectedElement;
   };
-  return `${filteredArr} igra : ${getRandomElement(tftComp)}`;
+
+  const final = filteredArr.map(
+    (element) => `${element} igra : ${getRandomElement(tftComp)}`
+  );
+  return final;
 };
 
-console.log(randomTftComp("emir", "peci"));
+console.log(
+  randomTftComp(
+    "emir",
+    "peci",
+    "hamza",
+    "seni",
+    "oton",
+    "komsho",
+    "mesa",
+    "meris"
+  )
+);
