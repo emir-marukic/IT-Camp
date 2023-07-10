@@ -448,3 +448,51 @@
 
 // const firstAndLast = (str) => str.slice(1, -1);
 // console.log(firstAndLast("emir"));
+
+const tftComp = [
+  "Ionian Challengers",
+  "Rogue Slayers",
+  "Strategists",
+  "Voids",
+  "Noxus Shurima",
+  "Demacia Juggernauts",
+  "Freljord Deadeyes",
+  "Yordle Gunners",
+  "Zaun Gunners",
+  "Challengers",
+  "Demacian Sorcerers",
+  "Ionia Invokers",
+  "Noxus Rogues",
+  "Shadow Isles Rogues",
+  "Shadow Isles Slayer",
+  "Shurimans",
+  "Void Bruisers",
+  "Yordle Multicasters",
+  "Yordless",
+];
+
+const randomTftComp = (
+  p1 = 0,
+  p2 = 0,
+  p3 = 0,
+  p4 = 0,
+  p5 = 0,
+  p6 = 0,
+  p7 = 0,
+  p8 = 0
+) => {
+  const argumentsArr = [p1, p2, p3, p4, p5, p6, p7, p8];
+  const filteredArr = argumentsArr.filter((element) => element !== 0);
+  const getRandomElement = (arr) => {
+    let tftRandomComp = Math.floor(Math.random() * arr.length);
+    let selectedElement = arr[tftRandomComp];
+    while (filteredArr.includes(selectedElement)) {
+      tftRandomComp = Math.floor(Math.random() * arr.length);
+      selectedElement = arr[tftRandomComp];
+    }
+    return selectedElement;
+  };
+  return `${filteredArr} igra : ${getRandomElement(tftComp)}`;
+};
+
+console.log(randomTftComp("emir", "peci"));
