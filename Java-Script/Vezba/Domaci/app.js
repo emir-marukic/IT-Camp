@@ -510,3 +510,42 @@ console.log(
     "meris"
   )
 );
+
+const comps = [
+  "Spear & Shield",
+  "Enlightened Ones",
+  "Shadow Spears",
+  "Noxus Empire",
+  "Super Nash Bros",
+  "Arcane Wizards",
+  "Shurima Nomads",
+  "Ravenous Hunter",
+  "4 Stars Yordle",
+  "Juggernauts",
+  "Furious Bite",
+  "Challengers",
+];
+
+function mapToComp(playersArray) {
+  const mappedPlayers = {};
+
+  playersArray.forEach((name) => {
+    const randomIndex = Math.floor(Math.random() * comps.length);
+    const randomComp = comps[randomIndex];
+
+    mappedPlayers[randomComp] = name;
+
+    comps.splice(randomIndex, 1);
+  });
+
+  return mappedPlayers;
+}
+
+const players = ["Emir", "Hamza", "Edis", "Mako", "Meris"];
+
+const mappedPlayers = mapToComp(players);
+
+for (const comp in mappedPlayers) {
+  console.log(`${comp}: ${mappedPlayers[comp]}`);
+}
+console.log(mappedPlayers);
