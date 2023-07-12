@@ -51,12 +51,3 @@
 //   return sum;
 // };
 // console.log(parni2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
-
-const mostFrequent = (arr) => {
-  const arrLength = arr.length;
-  for (let i = 0; i < arrLength; i++) {
-    for (let j = i; i < arrLength; j++) {}
-  }
-  console.log(arrLength[j]);
-};
-console.log(mostFrequent("a", "a", 2, 2, "c", "c"));

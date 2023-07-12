@@ -166,16 +166,17 @@
 
 // 1. From the array of numbers, choose even double even numbers and compute the sum using Array's filter, map and reduce methods.
 
-// const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// const even = (arr) => {
-//   const even = arr
-//     .filter((element) => element % 2 === 0)
-//     .reduce((prev, curr) => prev + curr);
-//   return even;
-// };
+const even = (arr) => {
+  const even = arr
+    .filter((element) => element % 2 === 0)
+    .map((element) => element * 2)
+    .reduce((prev, curr) => prev + curr);
+  return even;
+};
 
-// console.log(even(nums));
+console.log(even(nums));
 
 // 2. Write a JavaScript program which accept a string as input and swap the case of each character.
 // For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
