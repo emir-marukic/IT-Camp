@@ -484,21 +484,83 @@ const randomTftComp = (
   const argumentsArr = [p1, p2, p3, p4, p5, p6, p7, p8];
   const filteredArr = argumentsArr
     .filter((element) => element !== 0)
+<<<<<<< HEAD
     .map(
       (element) =>
         element.slice(0, 1).toUpperCase() + element.slice(1, element.length)
     );
+=======
+    .map((element) => element[0].toUpperCase() + element.slice(1));
+>>>>>>> e0357855ad9dcc703811ba5aaa9c4fa382126a32
   const getRandomElement = (arr) => {
     let tftRandomComp = Math.floor(Math.random() * arr.length);
     let selectedElement = arr[tftRandomComp];
-    while (filteredArr.includes(selectedElement)) {
-      tftRandomComp = Math.floor(Math.random() * arr.length);
-      selectedElement = arr[tftRandomComp];
-    }
+    arr.splice(tftRandomComp, 1);
     return selectedElement;
   };
+<<<<<<< HEAD
   return `${filteredArr[0]} igra : ${getRandomElement(tftComp)} ${
     filteredArr[1]
   } igra : ${getRandomElement(tftComp)}`;
 };
 console.log(randomTftComp("selman", "hamza", "emir", "seni"));
+=======
+
+  const final = filteredArr.map(
+    (element) => `${element} igra : ${getRandomElement(tftComp)}`
+  );
+  return final;
+};
+
+console.log(
+  randomTftComp(
+    "emir",
+    "peci",
+    "hamza",
+    "seni",
+    "oton",
+    "komsho",
+    "mesa",
+    "meris"
+  )
+);
+
+const comps = [
+  "Spear & Shield",
+  "Enlightened Ones",
+  "Shadow Spears",
+  "Noxus Empire",
+  "Super Nash Bros",
+  "Arcane Wizards",
+  "Shurima Nomads",
+  "Ravenous Hunter",
+  "4 Stars Yordle",
+  "Juggernauts",
+  "Furious Bite",
+  "Challengers",
+];
+
+function mapToComp(playersArray) {
+  const mappedPlayers = {};
+
+  playersArray.forEach((name) => {
+    const randomIndex = Math.floor(Math.random() * comps.length);
+    const randomComp = comps[randomIndex];
+
+    mappedPlayers[randomComp] = name;
+
+    comps.splice(randomIndex, 1);
+  });
+
+  return mappedPlayers;
+}
+
+const players = ["Emir", "Hamza", "Edis", "Mako", "Meris"];
+
+const mappedPlayers = mapToComp(players);
+
+for (const comp in mappedPlayers) {
+  console.log(`${comp}: ${mappedPlayers[comp]}`);
+}
+console.log(mappedPlayers);
+>>>>>>> e0357855ad9dcc703811ba5aaa9c4fa382126a32
