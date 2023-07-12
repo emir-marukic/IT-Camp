@@ -488,7 +488,6 @@ const randomTftComp = (
       (element) =>
         element.slice(0, 1).toUpperCase() + element.slice(1, element.length)
     );
-  console.log(filteredArr);
   const getRandomElement = (arr) => {
     let tftRandomComp = Math.floor(Math.random() * arr.length);
     let selectedElement = arr[tftRandomComp];
@@ -498,7 +497,8 @@ const randomTftComp = (
     }
     return selectedElement;
   };
-  return `${filteredArr} igra : ${getRandomElement(tftComp)}`;
+  return `${filteredArr[0]} igra : ${getRandomElement(tftComp)} ${
+    filteredArr[1]
+  } igra : ${getRandomElement(tftComp)}`;
 };
-
-console.log(randomTftComp("selman", "hamza"));
+console.log(randomTftComp("selman", "hamza", "emir", "seni"));
