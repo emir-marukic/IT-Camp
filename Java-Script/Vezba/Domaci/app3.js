@@ -166,17 +166,17 @@
 
 // 1. From the array of numbers, choose even double even numbers and compute the sum using Array's filter, map and reduce methods.
 
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const even = (arr) => {
-  const even = arr
-    .filter((element) => element % 2 === 0)
-    .map((element) => element * 2)
-    .reduce((prev, curr) => prev + curr);
-  return even;
-};
+// const even = (arr) => {
+//   const even = arr
+//     .filter((element) => element % 2 === 0)
+//     .map((element) => element * 2)
+//     .reduce((prev, curr) => prev + curr);
+//   return even;
+// };
 
-console.log(even(nums));
+// console.log(even(nums));
 
 // 2. Write a JavaScript program which accept a string as input and swap the case of each character.
 // For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
@@ -197,29 +197,35 @@ console.log(even(nums));
 // };
 // console.log(swapChar("Emir"));
 
-//
-// function ifStrawberry(str) {
-//   let niz = str.split(" ");
-//   let pozicija = niz.indexOf("jagoda");
+// 1. Na osnovu stringa koji unosi korisnik napraviti niz, gde cemo ispitati da li se jagoda nalazi unutar tog niza. Ako se jagoda ne nalazi unutar niza, funkcija neka vrati taj niz poredjan abecedno, s tim sto ce se na prvom mestu dodati broj 10, a na poslednjem broj 100.
+// Dok ako se jagoda nalazi unutar niza vratiti poziciju gde se ona nalazi.
 
-//   if (pozicija !== -1) {
-//     return `Jagoda se nalazi na poziciji ${pozicija}.`;
-//   } else {
-//     niz.sort();
-//     niz.unshift(10);
-//     niz.push(100);
-//     return niz;
-//   }
-// }
+function ifStrawberry(str) {
+  let niz = str.split(" ");
+  let pozicija = niz.indexOf("jagoda");
+
+  if (pozicija !== -1) {
+    return `Jagoda se nalazi na poziciji ${pozicija}.`;
+  } else {
+    niz.sort();
+    niz.unshift(10);
+    niz.push(100);
+    return niz;
+  }
+}
 
 //---------------
 
+// 2. We have the following arrays : Go to the editor
+
 // const color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
-// const place = ["st", "nd", "rd", "th"];
+// const order = ["st", "nd", "rd", "th"];
 
-// color.forEach((colorName, index) => {
-//   const suffix = place[index] || place[3];
-//   console.log(`${index + 1}${suffix} choice is ${colorName}.`);
-// });
-
-// console.log(color);
+// const colors = (arr) => {
+//   const newColorOrder = arr.map((element, index) => {
+//     const suffix = order[index] || order[3];
+//     return `${index + 1}${suffix} choice is ${element}.`;
+//   });
+//   return newColorOrder;
+// };
+// console.log(colors(color));
