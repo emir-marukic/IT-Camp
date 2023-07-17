@@ -484,7 +484,13 @@ const randomTftComp = (
   const argumentsArr = [p1, p2, p3, p4, p5, p6, p7, p8];
   const filteredArr = argumentsArr
     .filter((element) => element !== 0)
+
+    .map(
+      (element) =>
+        element.slice(0, 1).toUpperCase() + element.slice(1, element.length)
+    )
     .map((element) => element[0].toUpperCase() + element.slice(1));
+
   const getRandomElement = (arr) => {
     let tftRandomComp = Math.floor(Math.random() * arr.length);
     let selectedElement = arr[tftRandomComp];
