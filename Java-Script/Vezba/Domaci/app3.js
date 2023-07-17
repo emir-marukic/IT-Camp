@@ -195,3 +195,30 @@
 //   return newStr;
 // };
 // console.log(swapChar("Emir"));
+
+//
+// function ifStrawberry(str) {
+//   let niz = str.split(" ");
+//   let pozicija = niz.indexOf("jagoda");
+
+//   if (pozicija !== -1) {
+//     return `Jagoda se nalazi na poziciji ${pozicija}.`;
+//   } else {
+//     niz.sort();
+//     niz.unshift(10);
+//     niz.push(100);
+//     return niz;
+//   }
+// }
+
+//---------------
+
+// const color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+// const place = ["st", "nd", "rd", "th"];
+
+// color.forEach((colorName, index) => {
+//   const suffix = place[index] || place[3];
+//   console.log(`${index + 1}${suffix} choice is ${colorName}.`);
+// });
+
+// console.log(color);
