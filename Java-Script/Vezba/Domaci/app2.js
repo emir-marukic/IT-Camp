@@ -531,3 +531,94 @@
 //   }
 // };
 // console.log(isItCorrect("Dobar dan."));
+
+// const broj = [];
+// function sum(numbers) {
+//   const sum = numbers.reduce((prev, curr) => prev + curr, +0);
+//   return sum;
+// }
+// console.log(sum(broj));
+
+// const stringToNumber = function (str) {
+//   const str = +str;
+//   return str;
+// };
+
+// Consider an array/list of sheep where some sheep may
+// be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+// function countSheeps(arrayOfSheep) {
+//   const count = arrayOfSheep.filter((element) => element === true).length;
+//   return count;
+// }
+// const sheeps = [[true, false, true, true, false, true]];
+
+// console.log(countSheeps(sheeps));
+
+// Write a function findNeedle() that takes an array full of junk but containing one "needle"
+
+// After your function finds the needle it should return a message (as a string) that says:
+
+// "found the needle at position " plus the index it found the needle, so:
+
+// const junk = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"];
+
+// function findNeedle(haystack) {
+//   const index = haystack.findIndex((element) => element === "needle");
+//   if (index !== -1) {
+//     return `Found needle at ${index}`;
+//   } else {
+//     `There is no such item as needle`;
+//   }
+
+//   return needle;
+// }
+
+// console.log(findNeedle(junk));
+
+// function digitize(n) {
+//   const toStr = n.toString().split("").map(Number);
+//   const reverse = toStr.reverse();
+//   return reverse;
+// }
+
+// class SmallestIntegerFinder {
+//   findSmallestInt(args) {
+//      return Math.min(...args);
+//   }
+// }
+
+// function getGrade(s1, s2, s3) {
+//   const student = s1 + s2 + s3;
+//   const avarage = student / 3;
+
+//   if (avarage >= 90 && avarage < 100) {
+//     return "A";
+//   } else if (avarage >= 80 && avarage < 90) {
+//     return "B";
+//   } else if (avarage >= 70 && avarage < 80) {
+//     return "C";
+//   } else if (avarage >= 60 && avarage < 70) {
+//     return "D";
+//   } else if (avarage >= 0 && avarage < 60) {
+//     return "F";
+//   }
+// }
+// console.log(getGrade(65, 70, 59));
+
+// function sumArray(array) {
+//   if (array === null) {
+//     return 0;
+//   } else if (array.length < 2) {
+//     return 0;
+//   } else {
+//     array = array.sort(function (a, b) {
+//       return a - b;
+//     });
+//     let total = 0;
+//     for (let i = 1; i < array.length - 1; i++) {
+//       total += array[i];
+//     }
+//     return total;
+//   }
+// }
