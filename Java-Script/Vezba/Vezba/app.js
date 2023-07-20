@@ -51,13 +51,37 @@
 
 // Write a JavaScript program to move the last three characters to the start of a given string. The string length must be greater than or equal to three.
 
-let str = "Papaja";
-console.log(str.slice(str.length - 4, 0));
+// let str = "Papaja";
+// console.log(str.slice(str.length - 4, 0));
 
-const shuffle = (str) => {
-  newStr = "";
-  let lastThree = str.slice(-3);
-  let rest = str.slice(0, -3);
-  return lastThree + rest;
-};
-console.log(shuffle(str));
+// const shuffle = (str) => {
+//   newStr = "";
+//   let lastThree = str.slice(-3);
+//   let rest = str.slice(0, -3);
+//   return lastThree + rest;
+// };
+// console.log(shuffle(str));
+
+// function repeatStr(n, s) {
+//   let newStr = "";
+//   for (let i = 0; i < n; i++) {
+//     newStr += s;
+//   }
+//   return newStr;
+// }
+// console.log(repeatStr(2, "hello"));
+
+// Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+// The output should be two capital letters with a dot separating them.
+
+// It should look like this:
+
+// function abbrevName(name) {
+//   const split = name.split(" ");
+//   const firstName = split[0];
+//   const lastName = split[1];
+//   return `${firstName[0]}.${lastName[0]}`;
+// }
+
+// console.log(abbrevName("Emir Marukic"));
