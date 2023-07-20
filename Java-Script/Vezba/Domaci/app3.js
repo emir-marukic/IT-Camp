@@ -229,3 +229,23 @@ function ifStrawberry(str) {
 //   return newColorOrder;
 // };
 // console.log(colors(color));
+
+// Domaci
+
+// Napraviti objekat student koji ce da ima vrednosti (po zelji), svojstava:
+// ime, prezime, broj indeksa, ocene (niz svih ocena koje student ima u
+// trenutnoj godini), prosekOcena (funckija koja na osnovu ocene vraca prosek
+// datih ocena).
+
+// const student = {
+//   ime: "Emir",
+//   prezime: "Marukic",
+//   brIndeksa: 28,
+//   ocene: [1, 5, 10, 6, 2, 4, 3, 8, 6, 1],
+//   prosek: function () {
+//     const ocene = this.ocene.reduce((prev, curr) => prev + curr, 0);
+//     const prosek = ocene / this.ocene.length;
+//     return prosek;
+//   },
+// };
+// console.log(student.prosek());
