@@ -237,15 +237,42 @@ function ifStrawberry(str) {
 // trenutnoj godini), prosekOcena (funckija koja na osnovu ocene vraca prosek
 // datih ocena).
 
-const student = {
-  ime: "Emir",
-  prezime: "Marukic",
-  brIndeksa: 28,
-  ocene: [1, 5, 10, 6, 2, 4, 3, 8, 6, 1],
-  prosek: function () {
-    const ocene = this.ocene.reduce((prev, curr) => prev + curr, 0);
-    const prosek = ocene / this.ocene.length;
-    return prosek;
-  },
-};
-console.log(student.prosek());
+// const student = {
+//   ime: "Emir",
+//   prezime: "Marukic",
+//   brIndeksa: 28,
+//   ocene: [1, 5, 10, 6, 2, 4, 3, 8, 6, 1],
+//   prosek: function () {
+//     const ocene = this.ocene.reduce((prev, curr) => prev + curr, 0);
+//     const prosek = ocene / this.ocene.length;
+//     return prosek;
+//   },
+// };
+// console.log(student.prosek());
+
+// Domaci:
+// Napraviti objekat sa sledecim svojstvima:
+// 1. firstName,
+// 2. lastName,
+// 3. language,
+// 4. setLanguage - metoda za setovanje jezika,
+// 5. setNickName - metoda (svaka osoba ima nadimak sastavljen od prva dva slova
+// imena i prva dva slova prezimena)
+
+// const person = {
+//   firstName: "Emir",
+//   lastName: "Marukic",
+//   language: "",
+//   setLanguage: function (language) {
+//     this.language = language;
+//   },
+//   setNickName: function () {
+//     return `${this.firstName.slice(0, 2)}${this.lastName
+//       .slice(0, 2)
+//       .toLowerCase()}`;
+//   },
+// };
+
+// person.setLanguage("English");
+// console.log(person);
+// console.log(person.setNickName());
