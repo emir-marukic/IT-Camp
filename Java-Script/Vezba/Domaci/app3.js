@@ -259,20 +259,34 @@ function ifStrawberry(str) {
 // 5. setNickName - metoda (svaka osoba ima nadimak sastavljen od prva dva slova
 // imena i prva dva slova prezimena)
 
-// const person = {
-//   firstName: "Emir",
-//   lastName: "Marukic",
-//   language: "",
-//   setLanguage: function (language) {
-//     this.language = language;
-//   },
-//   setNickName: function () {
-//     return `${this.firstName.slice(0, 2)}${this.lastName
-//       .slice(0, 2)
-//       .toLowerCase()}`;
-//   },
-// };
+const person = {
+  firstName: "Emir",
+  lastName: "Marukic",
+  language: "",
+  setLanguage: function (language) {
+    this.language = language;
+  },
+  setNickName: function () {
+    return `${this.firstName.slice(0, 2)}${this.lastName
+      .slice(0, 2)
+      .toLowerCase()}`;
+  },
+};
 
-// person.setLanguage("English");
-// console.log(person);
-// console.log(person.setNickName());
+person.setLanguage("English");
+// 1.
+person.removeLenguage = function (lang) {
+  //   const position = this.lang.indexOf(lang);
+  //   if (position !== -1) {
+  //     this.lang.splice(position, 1);
+  //   }
+  // 2.
+
+  const newArr = this.lenguage.filter((language) => language !== lang);
+  this.language = newArr;
+};
+
+person;
+this.removeLenguage();
+console.log(person);
+console.log(person.setNickName());
