@@ -259,34 +259,99 @@ function ifStrawberry(str) {
 // 5. setNickName - metoda (svaka osoba ima nadimak sastavljen od prva dva slova
 // imena i prva dva slova prezimena)
 
-const person = {
-  firstName: "Emir",
-  lastName: "Marukic",
-  language: "",
-  setLanguage: function (language) {
-    this.language = language;
+// const person = {
+//   firstName: "Emir",
+//   lastName: "Marukic",
+//   language: "",
+//   setLanguage: function (language) {
+//     this.language = language;
+//   },
+//   setNickName: function () {
+//     return `${this.firstName.slice(0, 2)}${this.lastName
+//       .slice(0, 2)
+//       .toLowerCase()}`;
+//   },
+// };
+
+// person.setLanguage("English");
+// // 1.
+// person.removeLenguage = function (lang) {
+//   //   const position = this.lang.indexOf(lang);
+//   //   if (position !== -1) {
+//   //     this.lang.splice(position, 1);
+//   //   }
+//   // 2.
+
+//   const newArr = this.lenguage.filter((language) => language !== lang);
+//   this.language = newArr;
+// };
+
+// person;
+// this.removeLenguage();
+// console.log(person);
+// console.log(person.setNickName());
+//----------------
+
+// const automobil = {
+//   marka: "Audi",
+//   model: "Q7",
+//   boja: "Bela",
+//   pogon: "quattro",
+//   menjac: "Automatik",
+//   km: 240000,
+//   vlasnik: ["062321552", "063930630"],
+//   garaza: {
+//     parking: "JKP Servis",
+//     vikend: "od 17h free",
+//     satnaKarta: "50",
+//     dnevnaKarta: "200",
+//     mesecnaKarta: "2000",
+//     platiZa: function (pocetak, kraj) {
+//       const poceta = parseInt(pocetak);
+//       const kra = parseInt(kraj);
+
+//       let ukupnoVreme = kra - poceta;
+
+//       const satnaKarta = automobil.garaza.satnaKarta;
+//       const dnevnaKarta = automobil.garaza.dnevnaKarta;
+//       // const mesecna = automobil.garaza.mesecnaKarta;
+
+//       let ukupnaCena = 0;
+//       if (ukupnoVreme <= 1) {
+//         ukupnaCena = satnaKarta;
+//       } else if (ukupnoVreme <= 24) {
+//         ukupnaCena = dnevnaKarta;
+//       } else {
+//         ukupnaCena = ukupnoVreme * satnaKarta;
+//       }
+//       return ukupnaCena;
+//     },
+//   },
+// };
+
+// console.log(automobil.garaza.platiZa(14, 22));
+
+//---------------------------
+
+//  2. Write a JavaScript program to sort an array of JavaScript objects:
+
+const library = [
+  {
+    title: "The Road Ahead",
+    author: "Bill Gates",
+    libraryID: 1254,
   },
-  setNickName: function () {
-    return `${this.firstName.slice(0, 2)}${this.lastName
-      .slice(0, 2)
-      .toLowerCase()}`;
+  {
+    title: "Walter Isaacson",
+    author: "Steve Jobs",
+    libraryID: 4264,
   },
-};
+  {
+    title: "Mockingjay: The Final Book of The Hunger Games",
+    author: "Suzanne Collins",
+    libraryID: 3245,
+  },
+];
 
-person.setLanguage("English");
-// 1.
-person.removeLenguage = function (lang) {
-  //   const position = this.lang.indexOf(lang);
-  //   if (position !== -1) {
-  //     this.lang.splice(position, 1);
-  //   }
-  // 2.
-
-  const newArr = this.lenguage.filter((language) => language !== lang);
-  this.language = newArr;
-};
-
-person;
-this.removeLenguage();
-console.log(person);
-console.log(person.setNickName());
+const sorted = library.sort((a, b) => a.title.localeCompare(b.title));
+console.log(sorted);
