@@ -306,34 +306,22 @@ function ifStrawberry(str) {
 //     satnaKarta: "50",
 //     dnevnaKarta: "200",
 //     mesecnaKarta: "2000",
-//     platiZa: function (pocetak, kraj) {
-//       const poceta = parseInt(pocetak);
-//       const kra = parseInt(kraj);
-
-//       let ukupnoVreme = kra - poceta;
-
-//       const satnaKarta = automobil.garaza.satnaKarta;
-//       const dnevnaKarta = automobil.garaza.dnevnaKarta;
-//       // const mesecna = automobil.garaza.mesecnaKarta;
-
-//       let ukupnaCena = 0;
-//       if (ukupnoVreme <= 1) {
-//         ukupnaCena = satnaKarta;
-//       } else if (ukupnoVreme <= 24) {
-//         ukupnaCena = dnevnaKarta;
-//       } else {
-//         ukupnaCena = ukupnoVreme * satnaKarta;
-//       }
-//       return ukupnaCena;
+//     platiZa: function (datum1, datum2) {
+//       const d1 = new Date(datum1);
+//       const d2 = new Date(datum2);
+//       const razlika = d2.getTime() - d1.getTime();
+//       const razlikaDana = razlika / (1000 * 3600 * 24);
+//       // console.log("brdana", razlikaDana);
+//       return razlikaDana * this.dnevnaKarta;
 //     },
 //   },
 // };
 
 // console.log(automobil.garaza.platiZa(14, 22));
 
-//---------------------------
+// //---------------------------
 
-//  2. Write a JavaScript program to sort an array of JavaScript objects:
+// //  2. Write a JavaScript program to sort an array of JavaScript objects:
 
 // const library = [
 //   {
@@ -352,6 +340,7 @@ function ifStrawberry(str) {
 //     libraryID: 3245,
 //   },
 // ];
+<<<<<<< HEAD
 
 // const sorted = library.sort((a, b) => a.title.localeCompare(b.title));
 // console.log(sorted);
@@ -428,3 +417,48 @@ function ifStrawberry(str) {
 //   return poloziliC;
 // };
 // console.log(nisuPoloziliC(arr));
+=======
+
+// const sorted = library.sort((a, b) => a.title.localeCompare(b.title));
+// console.log(sorted);
+
+// 2. Nacin
+
+// const sortByTitle = (arr) => {
+//   const titleArr = arr.map((el) => el.title);
+//   titleArr.sort();
+
+//   const library2 = [];
+//   titleArr.forEach((title) => {
+//     const element = arr.find((obj) => obj.title === title);
+//     library2.push(element);
+//   });
+// };
+
+const movies = [
+  { title: "Inception", rating: 8, budget: "230M" },
+  { title: "Interstelar", rating: 5, budget: "200M" },
+  { title: "Godfather", rating: 9, budget: "280M" },
+  { title: "Home Alone", rating: 4, budget: "300M" },
+  { title: "Bad boys", rating: 8, budget: "180M" },
+];
+
+// 1. Nacin
+
+// const movies2 = movies.map((movie) => {
+//   return {
+//     title: movie.title,
+//     budget: movie.budget,
+//   };
+// });
+// console.log(movies2);
+
+// 2.
+const movies2 = movies.map((movie) => {
+  return {
+    title: movie.title,
+    budget: movie.budget,
+  };
+});
+console.log(movies2);
+>>>>>>> 4816993bfdd0c1439671c252bf288a2449aaef8f
