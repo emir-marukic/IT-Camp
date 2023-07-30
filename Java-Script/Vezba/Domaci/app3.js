@@ -340,7 +340,6 @@ function ifStrawberry(str) {
 //     libraryID: 3245,
 //   },
 // ];
-<<<<<<< HEAD
 
 // const sorted = library.sort((a, b) => a.title.localeCompare(b.title));
 // console.log(sorted);
@@ -417,7 +416,6 @@ function ifStrawberry(str) {
 //   return poloziliC;
 // };
 // console.log(nisuPoloziliC(arr));
-=======
 
 // const sorted = library.sort((a, b) => a.title.localeCompare(b.title));
 // console.log(sorted);
@@ -434,7 +432,6 @@ function ifStrawberry(str) {
 //     library2.push(element);
 //   });
 // };
-
 const movies = [
   { title: "Inception", rating: 8, budget: "230M" },
   { title: "Interstelar", rating: 5, budget: "200M" },
@@ -461,4 +458,3 @@ const movies2 = movies.map((movie) => {
   };
 });
 console.log(movies2);
->>>>>>> 4816993bfdd0c1439671c252bf288a2449aaef8f
