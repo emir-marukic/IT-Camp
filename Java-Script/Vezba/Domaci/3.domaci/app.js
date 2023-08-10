@@ -133,15 +133,6 @@ const products = [
   },
 ];
 
-//  2. Zadatak
-// Napraviti funkciju koja mapira neki niz (argument).
-// Ako produkt ima u zalihama vise od 20 treba:
-// Treba datom produktu smanjiti cenu za 20%
-// Ako produkt ima u zalihama vise od 40 treba:
-// Treba datom produktu smanjiti cenu za 40%
-// U slucaju da u zalihama ima 20 i manje kolicine,
-// cena se ne menja.
-
 function updatePrices() {
   const updatedProducts = this.map((product) => {
     if (product.quantity > 40) {
