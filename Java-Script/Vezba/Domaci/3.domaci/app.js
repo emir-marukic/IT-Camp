@@ -47,7 +47,8 @@ function lookUpProfile(name, prop) {
   return contact[prop];
 }
 
-// console.log(lookUpProfile.call(contacts, "Akira", "likes"));
+console.log(lookUpProfile.call(contacts, "Akira", "likes"));
+console.log(lookUpProfile.call(contacts, "Harry", "likes"));
 
 //  2. Zadatak
 // Napraviti funkciju koja mapira neki niz (argument).
@@ -145,4 +146,4 @@ function updatePrices() {
 
   return updatedProducts;
 }
-console.log(updatePrices.call(products));
+// console.log(updatePrices.call(products));
