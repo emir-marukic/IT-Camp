@@ -54,8 +54,6 @@ const getPosts = async (id) => {
   );
   const posts = await response.json();
 
-  const getRandomPosts = posts.filteredPosts((el) => el.id > 30 && el.id < 71);
-  id = getRandomPosts;
   const filteredPosts = console.log(posts);
 };
 
