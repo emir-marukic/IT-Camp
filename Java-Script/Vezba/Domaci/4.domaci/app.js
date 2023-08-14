@@ -3,33 +3,10 @@
 // ako argument ima manje od 11 samoglasnika neka se reject_a obecanje uz poruku "String ne zadovoljava uslov";
 // U svakom slucaju neka stoji poruka "Funkcija je izvrsena".
 
-// const chain = new Promise((resolve, reject) => {
-//   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, -2, -4, -6, -8];
-//   if (arr.every((num) => typeof num === "number")) {
-//     resolve(arr);
-//   } else {
-//     const errorMessage = "Dobijeni niz ima vrednosit koji nisu brojevi";
-//     reject(errorMessage);
-//   }
-// });
-
-// chain
-//   .then((dobijeniNiz) => {
-//     console.log(`Dobijeni niz je ${dobijeniNiz}`);
-//     return dobijeniNiz;
-//   })
-//   .then((niz) => {
-//     const parni = niz.filter((el) => el % 2 === 0);
-//     console.log(`Niz parnih brojeva je ${parni}`);
-//   })
-//   .catch((poruka) => {
-//     console.log(poruka);
-//   });
-
 const samoglasnik = new Promise((res, rej) => {
   let brojac = 0;
   const str =
-    "Ako ova rečenica ima deset samoglasnika, onda je zadatak ispunjen.";
+    "Ako ova rečenica ima deset samoglasnika, onda je funkcija ispunjena.";
   const samoglasnici = ["a", "e", "i", "o", "u"];
   for (const slovo of str) {
     if (samoglasnici.includes(slovo)) {
@@ -37,16 +14,18 @@ const samoglasnik = new Promise((res, rej) => {
     }
   }
   if (brojac > 9) {
-    res();
+    const resPoruka = "String zadovoljava uslov";
+    res(resPoruka);
   } else {
-    rej();
+    const rejPoruka = "String ne zadovoljava uslov";
+    rej(rejPoruka);
   }
 });
 
 samoglasnik
-  .then(() => {
-    console.log("String zadovoljava uslov");
+  .then((res) => {
+    console.log(res);
   })
-  .catch(() => {
-    console.log("String ne zadovoljava uslov");
+  .catch((rej) => {
+    console.log(rej);
   });
