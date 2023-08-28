@@ -17,6 +17,13 @@ main {
   width: 80%;
 }
 
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .point1,
 .point2 {
   width: 500px;
@@ -40,7 +47,8 @@ main {
 #inc1,
 #inc2,
 #dec1,
-#dec2 {
+#dec2,
+#reset {
   padding: 15px 20px;
   background-color: #f4f4f4;
   border-radius: 10px;
@@ -52,7 +60,8 @@ main {
 #inc1:hover,
 #inc2:hover,
 #dec1:hover,
-#dec2:hover {
+#dec2:hover,
+#reset:hover {
   background-color: #6f6d6d;
   color: #fff;
   transition: ease 0.3s;
