@@ -1,0 +1,10 @@
+.title {
+  color: aquamarine;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.backGround {
+  background-color: black;
+  border: 1px solid #fff;
+}
