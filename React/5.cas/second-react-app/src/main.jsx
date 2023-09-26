@@ -9,13 +9,21 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BlogPost />
     <BlogPost />
     <BlogPost /> */}
-    <div style={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
-      <Avatar name="Suad Suljovic" />
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        width: "80%",
+        margin: "auto",
+        // backgroundColor: "red",
+      }}
+    >
+      <Avatar name="Suad Suljkovic" />
       <Avatar />
       <Avatar />
       <Avatar />
       <Avatar />
-      <Avatar />
+      <Avatar name="Emir Marukic" />
       <Avatar />
       <Avatar />
       <Avatar />

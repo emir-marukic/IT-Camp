@@ -1,5 +1,9 @@
 .box {
-  margin-left: 100px;
+  padding: 10px;
+  /* background-color: beige; */
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
 }
 .card {
   /* background-color: gray; */
@@ -7,7 +11,8 @@
   gap: 50px;
   align-items: center;
   width: 300px;
-  border: 1px solid gray;
+  /* background-color: aqua; */
+  /* border: 1px solid gray; */
   border-radius: 10px;
 }
 .box-text {
