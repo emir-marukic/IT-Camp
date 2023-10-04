@@ -1,9 +1,10 @@
-import Button from "./Button";
+// import Class1 from "./1";
+import Class2 from "./2";
 
 function App() {
   return (
     <div>
-      <Button variant="subtle" color="blue" />
+      <Class2 />
     </div>
   );
 }

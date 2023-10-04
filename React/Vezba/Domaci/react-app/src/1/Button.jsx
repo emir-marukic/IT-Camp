@@ -46,7 +46,7 @@ const Button = ({ variant, color }) => {
           ...style,
           color: textColor,
           padding: "8px 18px",
-          margin: "400px 0px 0px 900px",
+          margin: "300px 0px 0px 700px",
           border: "1px solid gray",
           borderRadius: 4,
           fontWeight: "bold",
