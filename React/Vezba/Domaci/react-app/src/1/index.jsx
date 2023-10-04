@@ -3,7 +3,7 @@ import Button from "./Button";
 const Class1 = () => {
   return (
     <>
-      <Button />
+      <Button variant="subtle" color="black" />
     </>
   );
 };
