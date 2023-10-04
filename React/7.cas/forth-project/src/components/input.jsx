@@ -6,6 +6,15 @@ const Input = ({
   onChangeText,
   placeholder,
 }) => {
-  return <input type={type} className={`input ${className}`} style={style} onChangeText={input.value = onChangeText} placeholder={placeholder} />
+  return (
+    <input
+      type={type}
+      className={`input ${className}`}
+      style={style}
+      onChangeText={(input.value = onChangeText)}
+      placeholder={placeholder}
+    />
+  );
+};
 
-export default Input
+export default Input;

@@ -1,0 +1,50 @@
+.default {
+  background-color: white;
+}
+
+.filled {
+  background-color: blue;
+}
+
+.light {
+  background-color: #f4f4f4;
+}
+
+.outline {
+  background-color: #fff;
+  border: 1px solid blue;
+}
+
+.subtle {
+  background-color: color;
+}
+
+.transparent {
+  background-color: rgb(225, 211, 211);
+}
+
+.white {
+  background-color: aqua;
+}
+
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+
+.purple {
+  color: purple;
+}
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+.gray {
+  color: gray;
+}
