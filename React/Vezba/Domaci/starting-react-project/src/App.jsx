@@ -30,17 +30,17 @@ function App() {
   return (
     <div>
       <Header src={keyConceptsImage} />
-      <div style={{ display: "flex" }}>
+      <ul id="concepts">
         {concepts.map((item, index) => (
-          <div key={index} style={{ display: "flex", gap: "10px" }}>
+          <li className="concept" key={index}>
             <Card
               src={item.image}
               header={item.title}
               paragraph={item.description}
             />
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
