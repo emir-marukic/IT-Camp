@@ -1,5 +1,12 @@
+import Button from "./Button";
+import Color from "./Color";
+import Header from "./Header";
 import Heart from "./Heart";
+import Price from "./Price";
+import Size from "./Size";
+import Social from "./Social";
 import Star from "./Star";
+import Text from "./Text";
 
 const Card = () => {
   return (
@@ -8,6 +15,7 @@ const Card = () => {
         display: "flex",
         width: "80%",
         margin: "auto",
+        marginTop: "200px",
         justifyContent: "space-evenly",
       }}
     >
@@ -19,11 +27,8 @@ const Card = () => {
         />
       </div>
       <div>
-        <div>
-          <p>BRAND NAME</p>
-          <h1>The Catcher in the Rye</h1>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <Header />
+        <div style={{ display: "flex", justifyContent: "flex-start" }}>
           <div
             style={{
               display: "flex",
@@ -32,34 +37,23 @@ const Card = () => {
               width: "200px",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "flex-start",
-                alignItems: "center",
-                width: "100px",
-              }}
-            >
-              <Star />
-              <Star />
-              <Star />
-              <Star />
+            <div style={{ display: "flex", alignItems: "center" }}>
               <Star />
             </div>
-            <p>4 Reviews</p>
           </div>
-          <div style={{ display: "flex" }}>
-            <p>x</p>
-            <p>x</p>
-            <p>x</p>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-around",
+              width: "100px",
+            }}
+          >
+            <Social />
           </div>
         </div>
         <div style={{ width: "500px" }}>
-          Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-          sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps
-          cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine
-          tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean
-          shorts keytar banjo tattooed umami cardigan.
+          <Text />
         </div>
         <div
           style={{
@@ -68,42 +62,15 @@ const Card = () => {
             gap: "20px",
           }}
         >
-          <p>Color</p>
-          <div style={{ display: "flex", gap: "10px" }}>
-            <button
-              style={{
-                background: "white",
-                width: "30px",
-                height: "30px",
-                borderRadius: "20px",
-                border: "1px solid gray",
-              }}
-            ></button>
-            <button
-              style={{
-                background: "black",
-                width: "30px",
-                height: "30px",
-                borderRadius: "20px",
-                border: "1px solid gray",
-              }}
-            ></button>
-            <button
-              style={{
-                background: "blue",
-                width: "30px",
-                height: "30px",
-                borderRadius: "20px",
-                border: "1px solid gray",
-              }}
-            ></button>
-          </div>
-          <div>
-            <select name="Size" id="" style={{ padding: "10px 20px" }}>
-              <option value="M">M</option>
-              <option value="M">X</option>
-              <option value="M">XL</option>
-            </select>
+          <Color />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              width: "200px",
+            }}
+          >
+            <Size />
           </div>
         </div>
         <div
@@ -116,7 +83,7 @@ const Card = () => {
             paddingTop: "20px",
           }}
         >
-          <b>$58.00</b>
+          <Price />
           <div
             style={{
               display: "flex",
@@ -125,17 +92,7 @@ const Card = () => {
               width: "200px",
             }}
           >
-            <button
-              style={{
-                background: "blue",
-                padding: "10px 20px",
-                color: "#fff",
-                borderRadius: "10px",
-                border: "none",
-              }}
-            >
-              Button
-            </button>
+            <Button />
             <Heart />
           </div>
         </div>
