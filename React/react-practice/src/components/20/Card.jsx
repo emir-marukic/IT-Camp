@@ -1,8 +1,6 @@
 import Button from "./Button";
 import Color from "./Color";
-import Header from "./Header";
 import Heart from "./Heart";
-import Price from "./Price";
 import Size from "./Size";
 import Social from "./Social";
 import Star from "./Star";
@@ -27,7 +25,10 @@ const Card = () => {
         />
       </div>
       <div>
-        <Header />
+        <div>
+          <Text text="BRAND NAME" />
+          <Text text="The Ryan" type="t2" />
+        </div>
         <div style={{ display: "flex", justifyContent: "flex-start" }}>
           <div
             style={{
@@ -49,11 +50,15 @@ const Card = () => {
               width: "100px",
             }}
           >
-            <Social />
+            <Social
+              instaLink={"https://github.com/"}
+              fbLink={"//"}
+              twitterLink={"//"}
+            />
           </div>
         </div>
         <div style={{ width: "500px" }}>
-          <Text />
+          <Text text="Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan." />
         </div>
         <div
           style={{
@@ -83,7 +88,7 @@ const Card = () => {
             paddingTop: "20px",
           }}
         >
-          <Price />
+          <Text text="$58" type="h2" />
           <div
             style={{
               display: "flex",

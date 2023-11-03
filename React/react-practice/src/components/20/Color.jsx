@@ -6,8 +6,8 @@ const Color = () => {
         <button
           style={{
             background: "white",
-            width: "30px",
-            height: "30px",
+            width: "25px",
+            height: "25px",
             borderRadius: "20px",
             border: "1px solid gray",
           }}
@@ -15,8 +15,8 @@ const Color = () => {
         <button
           style={{
             background: "black",
-            width: "30px",
-            height: "30px",
+            width: "25px",
+            height: "25px",
             borderRadius: "20px",
             border: "1px solid gray",
           }}
@@ -24,8 +24,8 @@ const Color = () => {
         <button
           style={{
             background: "blue",
-            width: "30px",
-            height: "30px",
+            width: "25px",
+            height: "25px",
             borderRadius: "20px",
             border: "1px solid gray",
           }}

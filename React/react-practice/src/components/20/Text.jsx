@@ -1,13 +1,22 @@
-const Text = () => {
-  return (
-    <p>
-      Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha
-      taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw
-      denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub
-      blue bottle austin listicle pour-over, neutra jean shorts keytar banjo
-      tattooed umami cardigan.
-    </p>
-  );
+const Text = ({ text, type }) => {
+  const getType = () => {
+    switch (type) {
+      case "t1":
+        return { fontSize: 44 };
+      case "t2":
+        return { fontSize: 34 };
+      case "t3":
+        return { fontSize: 24 };
+      case "t4":
+        return { fontSize: 20 };
+      case "title":
+        return { fontSize: 18 };
+      case "normal":
+        return { fontSize: 16 };
+    }
+  };
+
+  return <p style={{ ...getType() }}>{text}</p>;
 };
 
 export default Text;
