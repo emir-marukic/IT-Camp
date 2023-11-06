@@ -1,17 +1,5 @@
-const Button = () => {
-  return (
-    <button
-      style={{
-        background: "blue",
-        padding: "10px 20px",
-        color: "#fff",
-        borderRadius: "0.25rem",
-        border: "none",
-      }}
-    >
-      Button
-    </button>
-  );
+const Button = (props) => {
+  return <button onClick={() => props?.onClick()}>{props.title}</button>;
 };
 
 export default Button;

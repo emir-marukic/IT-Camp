@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import Class20 from "./components/20/App";
+import Class20 from "./components/20/index";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

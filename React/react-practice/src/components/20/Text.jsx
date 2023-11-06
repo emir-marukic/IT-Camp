@@ -1,22 +1,20 @@
-const Text = ({ text, type }) => {
-  const getType = () => {
-    switch (type) {
+import "./text.css";
+
+const Text = (props) => {
+  const getTypeStyling = () => {
+    switch (props.type) {
       case "t1":
-        return { fontSize: 44 };
+        return "title";
       case "t2":
-        return { fontSize: 34 };
+        return "titleBold";
       case "t3":
-        return { fontSize: 24 };
+        return "normal";
       case "t4":
-        return { fontSize: 20 };
-      case "title":
-        return { fontSize: 18 };
-      case "normal":
-        return { fontSize: 16 };
+        return "price";
+      default:
+        return "normal";
     }
   };
-
-  return <p style={{ ...getType() }}>{text}</p>;
+  return <p className={getTypeStyling()}>{props.text}</p>;
 };
-
 export default Text;
