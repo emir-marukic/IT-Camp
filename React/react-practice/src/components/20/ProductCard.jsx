@@ -7,42 +7,70 @@ import Text from "./Text";
 import Rating from "./rating";
 
 const ProductCard = (props) => {
-  console.log(props);
-  const [img, setImg] = useState(props.data.imgs.white);
+  // console.log(props);
+
+  // State variables to store the last selected color and size
+  const [lastSelectedColor, setLastSelectedColor] = useState("white");
+  const [lastSelectedSize, setLastSelectedSize] = useState("");
+
+  // Callback function to update the last selected color
+  const handleColorChange = (color) => {
+    setLastSelectedColor(color);
+  };
+
+  // Callback function to update the last selected size
+  const handleSizeChange = (size) => {
+    setLastSelectedSize(size);
+  };
+
   return (
     <div>
       <div>
-        <img src={img} alt="" style={{ width: "400px", height: "400px" }} />
+        <img
+          src={props.data.imgs[lastSelectedColor]}
+          alt=""
+          style={{ width: "400px", height: "400px" }}
+        />
       </div>
       <div>
-        <Text type="t1" text="BRAND NAME" />
-        <Text type="t2" text={props.data.brandTitle} />
-        <div>
-          <Rating value={props.data.reviews} />
-          <Text type="t3" text={`${props.data.reviewsCount} reviews`} />
-
-          {/* <SocialIcon type="fb" />
-          <SocialIcon type="twitter" />
-          <SocialIcon type="intagram" /> */}
-        </div>
-        <Text type="t3" text={props.data.description} />
+        {/* ... (other components and elements) */}
 
         <div>
           <Text type="t3" text="Color" />
-          <RoundButton color="blue" />
-          <RoundButton color="black" />
-          <RoundButton color="white" />
+          <RoundButton color="blue" onClick={() => handleColorChange("blue")} />
+          <RoundButton
+            color="black"
+            onClick={() => handleColorChange("black")}
+          />
+          <RoundButton
+            color="white"
+            onClick={() => handleColorChange("white")}
+          />
+
           <Text type="t3" text="Size" />
-          <Select list={props.data.sizes} />
+          <Select
+            list={props.data.sizes}
+            onChange={(size) => {
+              handleSizeChange(size); // Update the last selected size
+              console.log("Selected Size:", size); // Log the selected size
+            }}
+          />
         </div>
 
         <div>
           <Text type="t4" text={props.data.price} />
-          <Button title="Button" />
-          <Button title="Button" />
+          <Button
+            title="Button"
+            onClick={() => {
+              // Log the last selected color and size
+              console.log("Last Selected Color:", lastSelectedColor);
+              console.log("Last Selected Size:", lastSelectedSize);
+            }}
+          />
         </div>
       </div>
     </div>
   );
 };
+
 export default ProductCard;
