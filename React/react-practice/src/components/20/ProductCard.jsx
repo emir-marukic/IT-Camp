@@ -35,7 +35,6 @@ const ProductCard = (props) => {
           <Text type="t3" text="Size" />
           <Select list={props.data.sizes} />
         </div>
-        {/* <Divider /> */}
 
         <div>
           <Text type="t4" text={props.data.price} />
