@@ -1,5 +1,5 @@
 const Pagination = (props) => {
-  const { page, totalPages, previousPage, nextPage, navigatePage } = props;
+  const { page, totalPages, navigatePage, previousPage, nextPage } = props;
 
   return (
     <div style={{ display: "flex" }}>
@@ -14,7 +14,7 @@ const Pagination = (props) => {
           1
         </button>
       )}
-      {totalPages >= 2 && (
+      {totalPages >= 2 && page < totalPages && (
         <button
           style={{
             backgroundColor: page > 1 ? "white" : "buttonface",
