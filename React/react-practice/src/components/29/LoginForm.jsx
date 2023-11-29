@@ -11,7 +11,7 @@ function LoginForm({ setData }) {
         fetch("https://dummyjson.com/users/1")
           .then((res) => res.json())
           .then((data) => setData(data));
-      } else alert("Email ili sifra pogresa");
+      } else alert("Email ili sifra pogresna");
     } else alert("Email nije validan");
   }
   return (

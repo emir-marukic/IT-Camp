@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-import Class29 from "./components/29/App";
+import Class30 from "./components/30/App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Class29 />
+    <Class30 />
   </React.StrictMode>
 );
