@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "./Login.css";
+import { Link } from "react-router-dom";
 
 // za napredne implementirati login preko auth rute na dummy json vebsajtu
 
@@ -10,7 +12,6 @@ function Login() {
   const [passwordError, setPasswordError] = useState("");
 
   function isEmailValid(email) {
-    // Regular expression for a simple email validation
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
     return emailRegex.test(email);
@@ -33,20 +34,33 @@ function Login() {
       setPasswordError("");
     }
 
-    if (valid) {
-      // login funkcija
-    }
+    return valid;
   };
 
   return (
-    <div>
-      <input value={email} onChange={(e) => setEmail(e.target.value)} />
-      {emailError && <p>{emailError}</p>}
+    <div className="container">
+      <div className="form">
+        <h3>Login</h3>
+        <input
+          value={email}
+          placeholder="email"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        {emailError && <p style={{ color: "red" }}>{emailError}</p>}
 
-      <input value={password} onChange={(e) => setPassword(e.target.value)} />
-      {passwordError && <p>{passwordError}</p>}
+        <input
+          value={password}
+          type="password"
+          placeholder="password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}
 
-      <button onClick={handleLogin}>Login</button>
+        <button onClick={handleLogin}>Login</button>
+        <p>
+          Create an account <Link to="/register">Signup now</Link>
+        </p>
+      </div>
     </div>
   );
 }
