@@ -1,8 +1,6 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
-import { Link } from "react-router-dom";
-
-// za napredne implementirati login preko auth rute na dummy json vebsajtu
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -11,9 +9,11 @@ function Login() {
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
+  // Use useNavigate instead of useHistory
+  const navigate = useNavigate();
+
   function isEmailValid(email) {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-
     return emailRegex.test(email);
   }
 
@@ -28,10 +28,15 @@ function Login() {
     }
 
     if (password.length < 8) {
-      setPasswordError("Password wrong");
+      setPasswordError("Your password needs to be more than 8 characters");
       valid = false;
     } else {
       setPasswordError("");
+    }
+
+    if (valid) {
+      // Redirect to the home page
+      navigate("/");
     }
 
     return valid;

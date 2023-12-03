@@ -6,10 +6,10 @@ const router = createBrowserRouter([
   { path: "/home/visit", element: <p>this is nested home route</p> },
 ]);
 
-const App = () => {
+const App = (props) => {
   return (
     <div>
-      <RouterProvider router={router} />
+      <RouterProvider router={router} color={props.color} />
     </div>
   );
 };
