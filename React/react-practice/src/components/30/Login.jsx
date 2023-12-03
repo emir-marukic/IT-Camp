@@ -28,7 +28,7 @@ function Login() {
     }
 
     if (password.length < 8) {
-      setPasswordError("Your password needs to be more than 8 characters");
+      setPasswordError("Incorect password");
       valid = false;
     } else {
       setPasswordError("");
@@ -51,7 +51,9 @@ function Login() {
           placeholder="email"
           onChange={(e) => setEmail(e.target.value)}
         />
-        {emailError && <p style={{ color: "red" }}>{emailError}</p>}
+        {emailError && (
+          <p style={{ color: "red", margin: "0px" }}>{emailError}</p>
+        )}
 
         <input
           value={password}
@@ -59,7 +61,9 @@ function Login() {
           placeholder="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}
+        {passwordError && (
+          <p style={{ color: "red", margin: "0px" }}>{passwordError}</p>
+        )}
 
         <button onClick={handleLogin}>Login</button>
         <p>

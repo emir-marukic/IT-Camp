@@ -83,28 +83,36 @@ function Register() {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        {nameError && <p style={{ color: "red" }}>{nameError}</p>}
+        {nameError && (
+          <p style={{ color: "red", margin: "0px" }}>{nameError}</p>
+        )}
         <input
           type="text"
           placeholder="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        {emailError && <p style={{ color: "red" }}>{emailError}</p>}
+        {emailError && (
+          <p style={{ color: "red", margin: "0px" }}>{emailError}</p>
+        )}
         <input
           type="password"
           placeholder="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}
+        {passwordError && (
+          <p style={{ color: "red", margin: "0px" }}>{passwordError}</p>
+        )}
         <input
           type="password"
           placeholder="confirm password"
           value={secondPass}
           onChange={(e) => setSecondPass(e.target.value)}
         />
-        {secondPassError && <p style={{ color: "red" }}>{secondPassError}</p>}
+        {secondPassError && (
+          <p style={{ color: "red", margin: "0px" }}>{secondPassError}</p>
+        )}
         <button onClick={registerHandler}>Register</button>
         <p>
           Already have an account? <Link to="/login">Login</Link>
