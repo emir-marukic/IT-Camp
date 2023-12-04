@@ -21,25 +21,44 @@ function Login() {
     let valid = true;
 
     if (!isEmailValid(email)) {
-      setEmailError("Email is not correct");
+      setEmailError("email is very very wrong");
       valid = false;
     } else {
       setEmailError("");
     }
 
     if (password.length < 8) {
-      setPasswordError("Incorect password");
+      setPasswordError("Password wrong");
       valid = false;
     } else {
       setPasswordError("");
     }
 
-    if (valid) {
-      // Redirect to the home page
-      navigate("/");
-    }
+    // if (valid) {
+    loginAction(email, password);
+    // }
+  };
 
-    return valid;
+  const loginAction = async (formEmail, formPassword) => {
+    try {
+      const response = await fetch("https://dummyjson.com/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          username: formEmail,
+          password: formPassword,
+          // expiresInMins: 60, // optional
+        }),
+      });
+
+      const data = await response.json();
+
+      localStorage.setItem("token", data.token);
+
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
