@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { UserContext } from "./UserContextProvider";
 
 function HomePage() {
+  const [user] = useContext(UserContext);
   return (
     <div
       style={{
@@ -10,7 +12,15 @@ function HomePage() {
         color: "#fff",
       }}
     >
-      <h2>Home Page</h2>
+      <p>
+        {user && (
+          <div>
+            <p>{user.firstName}</p>
+            <p>{user.lastName}</p>
+          </div>
+        )}
+      </p>
+      {user.firstAge}
       <div
         style={{
           display: "flex",
@@ -18,20 +28,7 @@ function HomePage() {
           gap: "40px",
           marginTop: "80px",
         }}
-      >
-        <Link
-          to={"/login"}
-          style={{ textDecoration: "none", color: "white", fontSize: "30px" }}
-        >
-          Login
-        </Link>
-        <Link
-          to={"/register"}
-          style={{ textDecoration: "none", color: "white", fontSize: "30px" }}
-        >
-          Register
-        </Link>
-      </div>
+      ></div>
     </div>
   );
 }
